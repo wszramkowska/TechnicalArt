@@ -1,0 +1,16 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/2106125/Documents/GitHub/TechnicalArt/TechnicalArtGame/Content/Blueprints/BP_SpinningCube.uasset",
+				"C:/Users/2106125/Documents/GitHub/TechnicalArt/TechnicalArtGame/Content/Blueprints/BP_ObjectManager.uasset",
+				"C:/Users/2106125/Documents/GitHub/TechnicalArt/TechnicalArtGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/C/UA/ZNXYJYMYMGO1T518MQEUHI.uasset",
+				"C:/Users/2106125/Documents/GitHub/TechnicalArt/TechnicalArtGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/7/FT/C8SNGITBXNVXT3S0YX8SLW.uasset",
+				"C:/Users/2106125/Documents/Unreal Projects/TechnicalArtGame/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+			]
+		}
+	]
+}
