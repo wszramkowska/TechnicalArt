@@ -10,23 +10,23 @@ Sid Szramkowska
 
 ### What sources or references have you identified as relevant to this task?
 
-- What type of sources did you identity and want to explore? How would you justify it in reference to the brief set? Think about the focus of the brief.
-- What type of sources do you want to avoid? How could these kinds of sources be detrimental to the user experience, immersion or implementation?
+I haven't previously done any in-depth research into anti-aliasing, therefore I thought a good place to start would be Unreal official documentation as that is the engine I would be using to test and measure various anti-aliasing methods. 
+
+To further my research I thought it would be a good idea to find some video sources as it would help visualise the effects of anti-aliasing, which would give me a base idea of why a player or developer might use one method of anti-aliasing over another.
 
 
-```Markdown
-# Example
 
-As I have done research regarding the audio identity and developing audio assets for this project in previous formative assignments. I wanted to look into specific Unreal and Wwise systems that will help create a more immersive experience. I wanted to focus on official documentation to improve my ability to learn new techniques without explicit instructions.
-
-I also wanted a creative source to help develop the parachute audio assets and learn how it should function within the game’s narrative.
-```
 
 #### Sources
 
 - An opening paragraph about the source stating the author, developer or organisation, this paragraph should explain the source's influence, credentials, critical reception, awards, reputation or any issues with the source. For example, if the source is not reputable. If the source is a game, the issues that occurred during development or if had a poor launch.
 - List the aspects analysed in reference to the current task.
 - An ending paragraph stating what you enjoyed or disliked, what you agreed with or not agree with.
+
+To get a good grasp of how anti-aliasing works, specifically in Unreal Engine, I turned to the official documentation. This is written by the Epic Developer Community, which makes this a good, reliable source. (Unreal Engine 5.5 Documentation | Epic Developer Community, s.d., ???????? ). I found documentation about 'Anti-aliasing and Upscaling' which explained the different methods (TSR, TAAU, FXAA, MSAA).
+
+TSR
+- n
 
 ```Markdown
 # Example Documentation
