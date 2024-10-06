@@ -19,23 +19,45 @@ To further my research I thought it would be a good idea to find some video sour
 
 #### Sources
 
+##### Unreal Documentation
+
 - An opening paragraph about the source stating the author, developer or organisation, this paragraph should explain the source's influence, credentials, critical reception, awards, reputation or any issues with the source. For example, if the source is not reputable. If the source is a game, the issues that occurred during development or if had a poor launch.
 - List the aspects analysed in reference to the current task.
 - An ending paragraph stating what you enjoyed or disliked, what you agreed with or not agree with.
 
 To get a good grasp of how anti-aliasing works, specifically in Unreal Engine, I turned to the official documentation. This is written by the Epic Developer Community, which makes this a good, reliable source. (Unreal Engine 5.5 Documentation | Epic Developer Community, s.d., ???????? ). I found documentation about 'Anti-aliasing and Upscaling' which explained the different methods (TSR, TAAU, FXAA, MSAA).
 
+Although the methods are different they all aim to smooth the jagged edges in images.
+
 TSR
-- n
+- Temporal Super Resolution uses a specific algorithm to enhance image quality through focusing the GPU resources on the upscaling process.
+- Rendered at much lower internal resolution, compared to what the Unreal Engine 4 Temporal anti-aliasing can achieve.
+- High quality visuals, whilst using less processing power.
+
+TAAU
+- Temporal Anti-Aliasing Upsampling samples different locations within a frame, and uses past frames.
+- You can choose the quality using the Engine Scalability Settings.
+
+FXAA
+- Fast Approximate Anti-Aliasing is a quick method used after rendering an image.
+- Finds edges using a high-contrast filter and blends the colours to make them look better.
+- Works well on low-end devices.
+- Final image may be worse in quality compared to other methods.
+
+MSAA
+- Multi Sample Anti-Aliasing smooths parts of an image, where the jagged edges are particularly noticeable.
+- It manipulates the colour along these edges to blend the colours of the surrounding pixels, creating the illusion of a smoother edge.
+- More samples lead to better quality but worse performance.
+
+Overall I found the Unreal documentation contained a good amount of useful information which could assist with optimisation. The documentation also tells you where to find the settings to change things like dithering quality or set the primary screen percentage, to further customise the anti-aliasing. There were also images included in the documentation, with sliders that show you the difference between no anti aliasing and with anti aliasing which I thought was helpful to compare the methods. However I thought some of the language was difficult to understand unless you already have some knowledge on anti-aliasing in Unreal, as very specific terms are used. 
+
+##### Youtube Video "Tech Focus: Anti-Aliasing - What Is It And Why Do We Need It?" by Digital Foundry
+
+
+
+
 
 ```Markdown
-# Example Documentation
-
-I wanted to create an emitter which takes advantage of spread and focus, which was a technique I learned from a previous assignment where the spatialisation of an object changes depending on distance. I also wanted to work specifically with a `Spline Component` to encapsulate the entire ship with an “Ocean Emitter”. This led me to read the Unreal Blueprints API References and Wwise 3D Positioning documentation (Unreal Engine Blueprint API Reference | Unreal Engine 5.4 Documentation | Epic Developer Community, s.d., AudioKinetic Inc, s.d.).
-
-I found a Blueprint node called “Find Location Closest to World Location" which returns a `Vector3` on the spline position closest to another `Vector3`, I believe this can help move the emitter towards the player(Finding time of given results from (Find Location Closest to World Location) from Splines - Programming & Scripting / Blueprint, 2023).
-
-I found the Unreal documentation clear and easy to navigate, however it was much harder to find specific nodes unless you are familiar with the naming conventions used by Unreal, such as “World Location” and the API documentation is separated from the property references. The Wwise documentation on the other hand is much easier to navigate as they have core topics such as “Using Sounds and Motion to Enhance Gameplay” and examples of how they can be applied, which the unreal documentation lacked. 
 
 # Example Game Source
 
