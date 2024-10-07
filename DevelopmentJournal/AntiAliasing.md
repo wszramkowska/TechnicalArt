@@ -76,6 +76,7 @@ I found their implementation and choice great for the context of their narrative
 
 - What was the process of completing the task at hand? Did you do any initial planning?
 - Did you receive any feedback from users, peers or lecturers? How did you react to it?
+- TALK ABOUT LEARNING MARKDOWN, converting to html etc
 
 <br>
 
@@ -89,7 +90,7 @@ public class HelloWorld : MonoBehaviour
     }
 }
 ```
-*Figure 1. An example of using a script as a figure. This script has a `Start()` method!*
+*Figure 1. Blueprints for the spinning cubes*
 
 <iframe src="https://blueprintue.com/render/ehihxtcn/" scrolling="no" allowfullscreen></iframe>
 
