@@ -51,6 +51,8 @@ Overall I found the Unreal documentation contained a good amount of useful infor
 
 ##### Youtube Video "Tech Focus: Anti-Aliasing - What Is It And Why Do We Need It?" by Digital Foundry
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NbrA4Nxd8Vo?si=c2svQXcOZbi72KMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 I did further research to better my understanding, this time looking for a more visual source. I thought this would be very helpful as anti-aliasing is used to create smoother visuals, therefore a video might be better suited to show that off, rather than documentation. I found a video by Digitak Foundry (Tech Focus: Anti-Aliasing - What Is It And Why Do We Need It? - YouTube, s.d.) which looks more in depth into what anti-aliasing actually is and why it is important. "Digital Foundry specialises in game technology and hardware reviews, using bespoke capture and analysis tools to provide a unique look at the way games play."
 
 - SSAA (Super Sampling Anti-aliasing) is costly with great quality.
@@ -97,52 +99,29 @@ This video was incredibly useful for me to improve my understanding, with plenty
 
 ### Outcome
 
-*Figure 3. Screen recording of my stress test in Unreal Engine*
+*Figure 3. Video of my stress test in Unreal Engine*
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vxJWbTaEc8A?si=blZrN1Bc7LV1P9mn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
--From my test 
-
-
+- From my test I could see a drop in performance when using anti-aliasing by looking at the FPS.
+- FXAA seemed to have the best performance whilst MSAA seemed to have the lowest, with increased lag and a rapid FPS drop.
+- This matches the conclusions from my research.
 
 
 ## Critical Reflection
 
 ### What did or did not work well and why?
 
-- What did not work well? What parts of the assignment that you felt did not fit the brief or ended up being lacklustre.
-- What did you think went very well? Were there any specific aspects you thought were very good?
--
+- Overall I was quite happy with my results as they supported my research. It was interesting to be able to test these methods myself as it allowed more control over the experiment.
+- On the other hand my test was done using cubes which made the visual element of anti-aliasing more difficult to recognise.
 
 ### What would you do differently next time?
 
-- Are there any new approaches, methodologies or different software that you wish to incorporate if you have another chance?
-- Is there another aspect you believe should have been the focus?
+- To improve the test I could create a scene with higher quality visuals in order to compare their appearance.
+- I could also do another test in a different game engine and compare that to my Unreal engine results.
 
 ## Bibliography
 
-- Please use the [harvard referencing convention](https://mylibrary.uca.ac.uk/referencing).
+Anti Aliasing and Upscaling in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/anti-aliasing-and-upscaling-in-unreal-engine (Accessed  12/10/2024).
 
-Video game development (2024) In: Wikipedia. At: https://en.wikipedia.org/w/index.php?title=Video_game_development&oldid=1240603537 (Accessed  03/09/2024).
 
-## Declared Assets
-
-- Please use the [harvard referencing convention](https://mylibrary.uca.ac.uk/referencing).
-
-Infinity Blade: Adversaries in Epic Content - UE Marketplace (s.d.) At: https://www.unrealengine.com/marketplace/en-US/product/infinity-blade-enemies (Accessed  09/09/2024).
-
----
-
-```Markdown
-# General Tips
-
-- Use plenty of images and videos to demonstrate your point. You can embed YouTube tutorials, your own recordings, etc.
-- Always reference! Even documentation, tutorials and anything you used for your assignment. Use an inline reference for the sentence and a bibliography reference at the end.
-- Word count is not important, you can also chose to use bullet points. As long as it is clear and readable, the format your decide to use can be flexible.
-- You are free to use AI but please ensure you have made a note in the declared assets, for example if you have a script called Test.cs , you should note that AI was used to in the creation of this script. You can use a bullet point list for each asset used like:
-
-The following assets were created or modified with the use of GPT 4o:
-- Test.cs
-- AnotherScript.cs
-- Development Journal.html
-
-```
+Tech Focus: Anti-Aliasing - What Is It And Why Do We Need It? - YouTube (s.d.) At: https://www.youtube.com/watch?v=NbrA4Nxd8Vo&ab_channel=DigitalFoundry (Accessed  12/10/2024).
