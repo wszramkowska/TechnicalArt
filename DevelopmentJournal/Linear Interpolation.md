@@ -13,6 +13,8 @@ Sid Szramkowska
 - What type of sources did you identity and want to explore? How would you justify it in reference to the brief set? Think about the focus of the brief.
 - What type of sources do you want to avoid? How could these kinds of sources be detrimental to the user experience, immersion or implementation?
 
+For my research I started off with Unreal Documentation as that is the engine I am using, and I have previously used lerp in Unity so it will be good to compare in Unreal.
+
 
 ```Markdown
 # Example
