@@ -25,6 +25,8 @@ I also like to include a more visual source which helps me personally understand
 
 My task consisted of using the Lerp node to blend between two values so I wanted to research Lerp and how it works within Unreal. Although I didn't find a dedicated documentation to Lerp, I found a document about Math Material Expressions which had a section on Linear Interpolation (Math Material Expressions in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.).
 
+
+
 ```Markdown
 # Example Documentation
 
