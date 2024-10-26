@@ -19,20 +19,16 @@ I also like to include a more visual source which helps me personally understand
 
 #### Sources
 
-- An opening paragraph about the source stating the author, developer or organisation, this paragraph should explain the source's influence, credentials, critical reception, awards, reputation or any issues with the source. For example, if the source is not reputable. If the source is a game, the issues that occurred during development or if had a poor launch.
-- List the aspects analysed in reference to the current task.
-- An ending paragraph stating what you enjoyed or disliked, what you agreed with or not agree with.
 
 My task consisted of using the Lerp node to blend between two values so I wanted to research Lerp and how it works within Unreal. Although I didn't find a dedicated documentation to Lerp, I found a document about Math Material Expressions which had a section on Linear Interpolation (Math Material Expressions in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.).
 
+The documentation does quite a good job at explaining Lerp in a fairly simple way, saying the Lerp expression blends two input values based on a third 'mask' value which controls the mix between the two inputs. When the alpha value is 0.0 only the first input is shown, and when the alpha value is 1.0 only the second input is shown. Values between 0.0 and 1.0 create a blend of the two inputs. 
 
+I found the Unreal documentation very helpful despite it being quite short, it was to the point and explained how Lerp works. It also included a screenshot of Blueprints which showed the Lerp node and how to use it within your material which could help me with my task for the week.
 
 ```Markdown
 # Example Documentation
 
-I wanted to create an emitter which takes advantage of spread and focus, which was a technique I learned from a previous assignment where the spatialisation of an object changes depending on distance. I also wanted to work specifically with a `Spline Component` to encapsulate the entire ship with an “Ocean Emitter”. This led me to read the Unreal Blueprints API References and Wwise 3D Positioning documentation (Unreal Engine Blueprint API Reference | Unreal Engine 5.4 Documentation | Epic Developer Community, s.d., AudioKinetic Inc, s.d.).
-
-I found a Blueprint node called “Find Location Closest to World Location" which returns a `Vector3` on the spline position closest to another `Vector3`, I believe this can help move the emitter towards the player(Finding time of given results from (Find Location Closest to World Location) from Splines - Programming & Scripting / Blueprint, 2023).
 
 I found the Unreal documentation clear and easy to navigate, however it was much harder to find specific nodes unless you are familiar with the naming conventions used by Unreal, such as “World Location” and the API documentation is separated from the property references. The Wwise documentation on the other hand is much easier to navigate as they have core topics such as “Using Sounds and Motion to Enhance Gameplay” and examples of how they can be applied, which the unreal documentation lacked. 
 
