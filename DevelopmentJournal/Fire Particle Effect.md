@@ -35,10 +35,26 @@ When looking at Unreal documentation I found there was actually quite a lot of i
 
 ###### Emitters
 - Niagara emitters are containers for modules.
-- Key sections in emitters nodes inclue: Emitter Settings, Emitter Spawn, Emitter Update, Particle Spawn, Particle Update, Add Event Handler, Render (Niagara Editor UI Reference | Unreal Engine 4.27 Documentation | Epic Developer Community, s.d.). You can use these to change various things about your effects such as speed, size, colour, spawn rates etc.
+- Key modules in emitters nodes inclue: Emitter Settings, Emitter Spawn, Emitter Update, Particle Spawn, Particle Update, Add Event Handler, Render (Niagara Editor UI Reference | Unreal Engine 4.27 Documentation | Epic Developer Community, s.d.). You can use these to change various things about your effects such as speed, size, colour, spawn rates etc.
 - You can run the simulation on CPU or GPU.
 
 ###### Modules
+- Modules can be seen as the building blocks for particle effects.
+- Control aspects such as particle movement, colour, size, velocity etc.
+- Modules can work independently or stack with others for various effects.
+
+###### Parameters
+- An abstraction of data in a Niagara simulation.
+- Types of parameters include:
+    - Primitive - Numerical values like integers or floats
+    - Enum - Selection from a list of fixed name values. You can choose one at a time like a drop down list.
+    - Struct - A combination of primitives and enums.
+    - Data Interfaces - Provides data from external sources (other parts of Unreal Engine or outside applications.)
+- You can add a custom parameter module to an emitter.
+
+Niagara has templates for commonly used base effects. This will be useful when making my fire effect as the templates include some modules already, meaning I won't have to start from scratch. I think this will also accelerate my learning as I can get straight into experimenting with the modules and seeing how each one changes the effect.
+
+
 
 
 
