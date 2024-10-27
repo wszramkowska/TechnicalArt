@@ -92,39 +92,21 @@ At first the lerp was not smooth and instead just switched  back and forth betwe
 
 ### What did or did not work well and why?
 
-- What did not work well? What parts of the assignment that you felt did not fit the brief or ended up being lacklustre.
-- What did you think went very well? Were there any specific aspects you thought were very good?
+
+- Overall I thought the task was quite successful. We used sine and cosine waves to push our understanding and do something a bit different to a standard lerp.
+- I played around with various values in the time and multiply nodes and observed the visual effects which furthered my knowledge on Lerp and the ways I can manipulate it.
+- The colours we chose as input values looked a bit different when we actually put the material on a game object, the colours seemed to be much lighter. Since I was just trying to test the lerp nodes and how to blend the colours, I didn't worry too much about it, however if in future I needed specific colours this would be a problem I would have to look into.
+
 
 ### What would you do differently next time?
 
-- Are there any new approaches, methodologies or different software that you wish to incorporate if you have another chance?
-- Is there another aspect you believe should have been the focus?
+- In the future I would like to explore more uses of Lerp, such as smoothly transitioning between two points or including textures.
 
 ## Bibliography
 
-- Please use the [harvard referencing convention](https://mylibrary.uca.ac.uk/referencing).
+Math Material Expressions in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/math-material-expressions-in-unreal-engine (Accessed  20/10/2024).
 
-Video game development (2024) In: Wikipedia. At: https://en.wikipedia.org/w/index.php?title=Video_game_development&oldid=1240603537 (Accessed  03/09/2024).
+Linear Interpolate or Lerp Node EXPLAINED! Unreal Engine Materials (2024) At: https://www.youtube.com/watch?v=tBib8qQxd1M (Accessed  27/10/2024).
 
-## Declared Assets
 
-- Please use the [harvard referencing convention](https://mylibrary.uca.ac.uk/referencing).
 
-Infinity Blade: Adversaries in Epic Content - UE Marketplace (s.d.) At: https://www.unrealengine.com/marketplace/en-US/product/infinity-blade-enemies (Accessed  09/09/2024).
-
----
-
-```Markdown
-# General Tips
-
-- Use plenty of images and videos to demonstrate your point. You can embed YouTube tutorials, your own recordings, etc.
-- Always reference! Even documentation, tutorials and anything you used for your assignment. Use an inline reference for the sentence and a bibliography reference at the end.
-- Word count is not important, you can also chose to use bullet points. As long as it is clear and readable, the format your decide to use can be flexible.
-- You are free to use AI but please ensure you have made a note in the declared assets, for example if you have a script called Test.cs , you should note that AI was used to in the creation of this script. You can use a bullet point list for each asset used like:
-
-The following assets were created or modified with the use of GPT 4o:
-- Test.cs
-- AnotherScript.cs
-- Development Journal.html
-
-```
