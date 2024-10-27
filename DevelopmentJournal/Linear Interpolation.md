@@ -13,11 +13,13 @@ Sid Szramkowska
 
 For my research I started off with Unreal Documentation as that is the engine I am using, and I have previously used lerp in Unity so it will be good to compare in Unreal.
 
-I also like to include a more visual source which helps me personally understand and absorb the information more easily, although I have to be careful to make sure the source is reliable and up to date.
+I also like to include a more visual source which helps me personally understand and absorb the information more easily, although I have to be careful to make sure the source is reliable and up to date. More specifically I would like to find a video which explains how to use the Lerp node in blueprints.
 
 
 
 #### Sources
+
+##### Unreal Documentation
 
 
 My task consisted of using the Lerp node to blend between two values so I wanted to research Lerp and how it works within Unreal. Although I didn't find a dedicated documentation to Lerp, I found a document about Math Material Expressions which had a section on Linear Interpolation (Math Material Expressions in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.).
@@ -26,11 +28,25 @@ The documentation does quite a good job at explaining Lerp in a fairly simple wa
 
 I found the Unreal documentation very helpful despite it being quite short, it was to the point and explained how Lerp works. It also included a screenshot of Blueprints which showed the Lerp node and how to use it within your material which could help me with my task for the week.
 
+##### Youtube Video Linear Interpolate or Lerp Node EXPLAINED! Unreal Engine Materials by Hoj Dee
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tBib8qQxd1M?si=Y__kkT24sTDc5uMP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+I found this video by Hoj Dee which explained what Lerp was, similair to the Unreal Documentation, but went into further detail about how to use it. According to the video Lerp blends between two values based on a third value thats used as a mask.
+
+- Input values A and B can be anything: constant, scalar constant 2 vector, constant 3 vector, constant 4 vector, texture samples. Make sure to lerp between inputs with the same number of channels.
+- Alpha input (mask) defines the blend of A and B inputs. If Alpha is 0.0 the A input is shown, if alpha is 1.0 the B input is shown. Values between 0.0 and 1.0 create a blend of the two inputs with values below 0.5 being weighted towards the A input and values from 0.5 becoming weighted towards the B input.
+- In texture samples the black parts have a value of 0 (where the first input will be) and the white parts have a value of 1 (where the second input will be). Shades of grey will be values between white and black and therefore create a blend of the two inputs.
+- You should always clamp the alpha values between 0.0 and 1.0 to avoid extrapolating. You can use the saturate node for this. Clamping will clamp any value below 0 to 0 and any value above 1 to 1.
+
+This video was incredibly helpful, especially as I don't really have any experience with the Unreal Engine. Hoj Dee explains how to get each node and even provides the keyboard shortcuts for them. When using other nodes such as Clamp or Component Mask to showcase the Lerp node, he provides cards which link you to videos that explain those nodes. There are also captions for general keyboard shortcuts used in blueprints such as 'ctrl D' for duplicate. In addition to the blueprints, Hoj Dee also provides diagrams to support his knowledge. At the end of the video there was a number of examples to show how you can change your material's brightness, roughness and how to animate textures using Lerp and Panner nodes. 
+
+
 ```Markdown
 # Example Documentation
 
 
-I found the Unreal documentation clear and easy to navigate, however it was much harder to find specific nodes unless you are familiar with the naming conventions used by Unreal, such as “World Location” and the API documentation is separated from the property references. The Wwise documentation on the other hand is much easier to navigate as they have core topics such as “Using Sounds and Motion to Enhance Gameplay” and examples of how they can be applied, which the unreal documentation lacked. 
+
 
 # Example Game Source
 
