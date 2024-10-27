@@ -60,10 +60,18 @@ The Unreal documentation provides a lot of guidance on using Niagara. There is v
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q8avHL7syC4?si=0RI2MJx4VxcJB63_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-After reading the Unreal documentation I wanted to get straight into creating my effect and I thought the easiest way to learn would be a tutorial. I watched this youtube video by Motion Dreams and then tried to create my own fire based on what I had learned. To make things simpler, the video provided chapters which included the different emitters within the system. The emitters I wanted to create for my fire were flames, smoke, embers and a glow which would cast onto the ground. 
+After reading the Unreal documentation I wanted to get straight into creating my effect and I thought the easiest way to learn would be a tutorial. I watched this youtube video by Motion Dreams and then tried to create my own fire based on what I had learned. To make things simpler, the video provided chapters which included the different emitters within the system. The emitters I wanted to create for my fire were flames, smoke, embers and a glow which would cast onto the ground, so I tried to pay extra attention for those chapters in the video.
 
-###### Flames
--
+One of the first things this video covers is how to actually create a Niagara system and select a template. Motion dreams edits a lot of modules, changing things like; spawn rate, life time, sprite size, drag, noise and velocity. 
+
+One thing that stood out to me was unchecking or deleting gravity force which would stop my particles from dropping and give me a flame effect. 
+
+Another important setting for me was the Sprite renderer where I could add a material from the starter content which looked like fire. Using the Sub UVAnimation module I could animate that material. 
+
+The video also taught me how to use the 'color from curve' setting which gives you a colour ramp so you can add multiple colours and choose how they are blended.Top markers on the ramp control the colour, whilst the bottom markers control opacity. This will be valuable when trying to recreate the colour of flames, which blend yellows, oranges and reds.
+
+I found this video to be a great learning tool.
+
 
 
 
@@ -72,13 +80,9 @@ After reading the Unreal documentation I wanted to get straight into creating my
 
 
 ```Markdown
-# Example Documentation
 
-I wanted to create an emitter which takes advantage of spread and focus, which was a technique I learned from a previous assignment where the spatialisation of an object changes depending on distance. I also wanted to work specifically with a `Spline Component` to encapsulate the entire ship with an “Ocean Emitter”. This led me to read the Unreal Blueprints API References and Wwise 3D Positioning documentation (Unreal Engine Blueprint API Reference | Unreal Engine 5.4 Documentation | Epic Developer Community, s.d., AudioKinetic Inc, s.d.).
 
-I found a Blueprint node called “Find Location Closest to World Location" which returns a `Vector3` on the spline position closest to another `Vector3`, I believe this can help move the emitter towards the player(Finding time of given results from (Find Location Closest to World Location) from Splines - Programming & Scripting / Blueprint, 2023).
 
-I found the Unreal documentation clear and easy to navigate, however it was much harder to find specific nodes unless you are familiar with the naming conventions used by Unreal, such as “World Location” and the API documentation is separated from the property references. The Wwise documentation on the other hand is much easier to navigate as they have core topics such as “Using Sounds and Motion to Enhance Gameplay” and examples of how they can be applied, which the unreal documentation lacked. 
 
 # Example Game Source
 
@@ -97,7 +101,11 @@ I found their implementation and choice great for the context of their narrative
 
 - What was the process of completing the task at hand? Did you do any initial planning?
 - Did you receive any feedback from users, peers or lecturers? How did you react to it?
-- I used pair programming for this task, similairly to last week but this time I was the navigator which gave me a new perspective. I was now able to better understand both roles within pair programming.
+
+
+###### Flames
+- I used the fountain emitter template as a base for my flames.
+- 
 
 <br>
 
