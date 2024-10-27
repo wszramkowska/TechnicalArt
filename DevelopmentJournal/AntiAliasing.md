@@ -100,6 +100,8 @@ This video was incredibly useful for me to improve my understanding, with plenty
 ### Outcome
 
 *Figure 3. Video of my stress test in Unreal Engine*
+
+[Stress Test](https://www.youtube.com/watch?v=vxJWbTaEc8A&ab_channel=WSzramkowska)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vxJWbTaEc8A?si=blZrN1Bc7LV1P9mn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - From my test I could see a drop in performance when using anti-aliasing by looking at the FPS.

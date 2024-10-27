@@ -42,72 +42,51 @@ I found this video by Hoj Dee which explained what Lerp was, similair to the Unr
 This video was incredibly helpful, especially as I don't really have any experience with the Unreal Engine. Hoj Dee explains how to get each node and even provides the keyboard shortcuts for them. When using other nodes such as Clamp or Component Mask to showcase the Lerp node, he provides cards which link you to videos that explain those nodes. There are also captions for general keyboard shortcuts used in blueprints such as 'ctrl D' for duplicate. In addition to the blueprints, Hoj Dee also provides diagrams to support his knowledge. At the end of the video there was a number of examples to show how you can change your material's brightness, roughness and how to animate textures using Lerp and Panner nodes. 
 
 
-```Markdown
-# Example Documentation
-
-
-
-
-# Example Game Source
-
-Just Cause 3 is an action-adventure game developed by Avalanche Studios, it features a mechanic where the player can navigate the open world with the use of a parachute and a wingsuit(Just Cause 3, 2015).
-
-The wind becomes more prominent in the mix and its volume and speed is based on the player's velocity when using the wingsuit or parachute. It is not too overwhelming during action sequences to ensure audio responses can be clearly heard.
-
-I found their implementation and choice great for the context of their narrative and game mechanics. However, for the sequences featured in the assignment, it is more “cinematic” allowing for a different approach for the mix and can be “exaggerated” to drive its narrative function.
-
-
-```
-
 ## Implementation
 
 ### What was the process of completing the task? What influenced your decision making?
 
-- What was the process of completing the task at hand? Did you do any initial planning?
-- Did you receive any feedback from users, peers or lecturers? How did you react to it?
+
+- I completed this task using pair programming, with me as the driver. This was helpful as my pair was able to make suggestions based on their knowledge and research whilst I could focus on the blueprints and trying to make them work.
+- We decided to create a material that will lerp between two colours.
+- We used a sine graph to create a smooth blend between the colours, giving a pulsing effect.
 
 <br>
 
-```csharp
-using UnityEngine;
-public class HelloWorld : MonoBehaviour 
-{
-    public void Start() 
-    {
-        Debug.Log("Hello World!");
-    }
-}
-```
-*Figure 1. An example of using a script as a figure. This script has a `Start()` method!*
+*Figure 1. Blueprints for Sine Lerp*
+<iframe src="https://blueprintue.com/render/46z2ml9b/" scrolling="no" allowfullscreen></iframe>
+
+- We used the time node to smoothly oscillate between the colours over time.
 
 ### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
 
-- Did you try any new software or approaches? How did the effect development?
+- We also tried the cosine node to compare how this would affect the lerp of the material.
 
 <br>
 
-![onhover image description](https://beforesandafters.com/wp-content/uploads/2021/05/Welcome-to-Unreal-Engine-5-Early-Access-11-16-screenshot.png)
-*Figure 2. An example of an image as a figure. This image shows where to package your Unreal project!.*
+*Figure 2. Blueprints for Cosine Lerp*
+<iframe src="https://blueprintue.com/render/o2jsxd2n/" scrolling="no" allowfullscreen></iframe>
+
+- Both the sine and cosine were similair in that they smoothly transitioned between the colours.
+- Cosine appears to start at the solid colour whilst sine appears to start at the halfway point between the colours.
+
+
 
 ### Did you have any technical difficulties? If so, what were they and did you manage to overcome them?
 
-- Did you have any issues completing the task? How did you overcome them?
+At first the lerp was not smooth and instead just switched  back and forth between our two colours. To fix this we added a Sine wave node which would cycle smoothly between 0 and 1.
 
 ## Outcome
 
-Here you can put links required for delivery of the task, ensure they are properly labelled appropriately and the links function. The required components can vary between tasks, you can find a definative list in the Assessment Information. Images and code snippets can be embedded and annotated if appropriate.
 
-- [Example Video Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
-- [Example Repo Link](https://github.com/githubtraining/hellogitworld)
-- [Example Build Link](https://samperson.itch.io/desktop-goose)
+*Figure 3. Video of my lerp task in Unreal Engine*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=C4v0qHaYuEISAC01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Lerp Task](https://www.youtube.com/watch?v=qpAh_nHwTWY&ab_channel=WSzramkowska)
 
-*Figure 3. An example of an embedded video using a HTML code snippet.*
 
-<iframe frameborder="0" src="https://itch.io/embed/2374819" width="552" height="167"><a href="https://bitboyb.itch.io/nephilim-resurrection">Nephilim Resurrection (BETA) by bitboyb</a></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qpAh_nHwTWY?si=T1SsJ5yO4-Z17Qq-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-*Figure 4. An example of a itch.io widget*
+
 
 ## Critical Reflection
 
