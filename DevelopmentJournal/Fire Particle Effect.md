@@ -54,6 +54,18 @@ When looking at Unreal documentation I found there was actually quite a lot of i
 
 Niagara has templates for commonly used base effects. This will be useful when making my fire effect as the templates include some modules already, meaning I won't have to start from scratch. I think this will also accelerate my learning as I can get straight into experimenting with the modules and seeing how each one changes the effect.
 
+The Unreal documentation provides a lot of guidance on using Niagara. There is various documentation depending on what you are looking for, I mostly used the overview but there is documentation on editor UI, key concepts and systems and emitter modules. All of this, whilst detailed, can be overwhelming for someone who has never used Niagara and therefore I think is most helpful as a reference whilst creating my fire effect. Once I have started my task it will be easier to know the relevant bits of information to look for. 
+
+##### Youtube Video Fire Simulation FX in Unreal Engine Niagara | in 12 minutes by Motion Dreams
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q8avHL7syC4?si=0RI2MJx4VxcJB63_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+After reading the Unreal documentation I wanted to get straight into creating my effect and I thought the easiest way to learn would be a tutorial. I watched this youtube video by Motion Dreams and then tried to create my own fire based on what I had learned. To make things simpler, the video provided chapters which included the different emitters within the system. The emitters I wanted to create for my fire were flames, smoke, embers and a glow which would cast onto the ground. 
+
+###### Flames
+-
+
+
 
 
 
