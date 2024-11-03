@@ -5,6 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/wikto/OneDrive/Documents/GitHub/TechnicalArt/TechnicalArt_Project/Content/UI/WB_Main.uasset",
+				"C:/Users/wikto/OneDrive/Documents/GitHub/TechnicalArt/TechnicalArt_Project/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Users/wikto/OneDrive/Documents/GitHub/TechnicalArt/TechnicalArt_Project/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/C9/AO30ZPI46PINHIH99RCOP3.uasset",
 				"C:/Users/wikto/OneDrive/Documents/Unreal Projects/TechnicalArt_Project/Content/StarterContent/Architecture/Floor_400x400.uasset"
 			]
 		}
