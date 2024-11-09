@@ -92,7 +92,24 @@ I found this video to be a great learning tool. It gave me a base to work from, 
 
 ###### Flames
 - I used the fountain emitter template as a base for my flames.
-- 
+- Changed various settings within 'initirialize particle' module such as; lifetime, uniform sprite. 
+- Changed velocity module settings.
+- Turned off gravity to make the flame go up.
+- Added curl noise force module to give a flame flickering effect.
+- Changed material texture to fire_subuv.
+- Used colour from curve in the colour module, picked reds, oranges and yellows to blend. 
+
+###### Smoke
+- Used my flame emitter as a base.
+- Changed material texture to smoke_subuv.
+- Changed colour to just black.
+- Changed alpha to make the smoke more transparent.
+- Increased sprite size, velocity and lifetime to make the smoke bigger than the fire, and last longer.
+- I also changed the sim target to use the gpu for this simulation.
+
+###### Embers
+- Used the fountain template as a base.
+
 
 <br>
 
