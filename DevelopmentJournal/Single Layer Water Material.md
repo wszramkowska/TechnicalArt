@@ -20,49 +20,68 @@ My secondary source will be a video as I find these the most helpful for me. Thi
 
 ##### Unreal Documentation
 
+Unreal documentation for materials is incredibly vast and seems to have various detailed pages to do with specific materials or their functions. Since I am new to materials in Unreal, so I stuck with the 'Getting Started' section of the Materials documentation (Unreal Engine Materials | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.). Within 'Getting Started' I used the essential material concepts documentation (Essential Unreal Engine Material Concepts | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.) to learn some of the basics.
 
+###### Materials
+Control the visual appearance of objects by defining surface characteristics like color, reflectivity, roughness, and transparency, which dictate light interaction.
 
-```Markdown
-# Example Documentation
+###### Shading Pipeline
+Unreal Engine uses shaders (written in HLSL) to determine how each pixel and vertex should render on screen. Users create Materials visually in the Material Editor instead of coding in HLSL.
 
-I wanted to create an emitter which takes advantage of spread and focus, which was a technique I learned from a previous assignment where the spatialisation of an object changes depending on distance. I also wanted to work specifically with a `Spline Component` to encapsulate the entire ship with an “Ocean Emitter”. This led me to read the Unreal Blueprints API References and Wwise 3D Positioning documentation (Unreal Engine Blueprint API Reference | Unreal Engine 5.4 Documentation | Epic Developer Community, s.d., AudioKinetic Inc, s.d.).
+###### Material Editor
+Materials are built using nodes (Material Expressions) that create a shader graph, where inputs connect to the Main Material Node. Properties like Material Domain, Blend Mode, and Shading Model determine the Material's foundational settings.
 
-I found a Blueprint node called “Find Location Closest to World Location" which returns a `Vector3` on the spline position closest to another `Vector3`, I believe this can help move the emitter towards the player(Finding time of given results from (Find Location Closest to World Location) from Splines - Programming & Scripting / Blueprint, 2023).
+###### Material Expressions
+These nodes perform specific tasks, and by connecting them, users effectively write shader code without needing direct HLSL input. Expressions allow customization of data flow and control of aspects like color, opacity, and roughness.
 
-I found the Unreal documentation clear and easy to navigate, however it was much harder to find specific nodes unless you are familiar with the naming conventions used by Unreal, such as “World Location” and the API documentation is separated from the property references. The Wwise documentation on the other hand is much easier to navigate as they have core topics such as “Using Sounds and Motion to Enhance Gameplay” and examples of how they can be applied, which the unreal documentation lacked. 
+###### Material Instances and Functions
+Material Instances allow quick variations of a base Material, ideal for assets that need similar textures with different colors or characteristics.
+Material Functions package commonly used node networks, enabling reusable elements across different Materials.
 
-# Example Game Source
+###### Data Types and Flow
+Unreal Engine utilizes RGBA (float4) color values, with data types like float, float2, float3, and float4 to control Material expressions. Knowing data types is essential for creating complex Materials.
 
-Just Cause 3 is an action-adventure game developed by Avalanche Studios, it features a mechanic where the player can navigate the open world with the use of a parachute and a wingsuit(Just Cause 3, 2015).
+The Unreal documentation is very detailed and the documentation I looked at was just one of many available. The inclusion of screenshots was helpful to orientate myself within the Engine and actually apply the information given to me. There are also multiple links to other documentation so anything I didn't understand, I was able to easily catch up on.
 
-The wind becomes more prominent in the mix and its volume and speed is based on the player's velocity when using the wingsuit or parachute. It is not too overwhelming during action sequences to ensure audio responses can be clearly heard.
+Although there was a lot of information provided, I found myself getting lost quite quickly. I don't think this documentation is necessarily meant to be read all in one go, but maybe more as a point of reference when you have a specific problem or question. Otherwise it is just too much.
 
-I found their implementation and choice great for the context of their narrative and game mechanics. However, for the sequences featured in the assignment, it is more “cinematic” allowing for a different approach for the mix and can be “exaggerated” to drive its narrative function.
+##### Youtube Video How to Make a Simple Water Material in Unreal Engine 5 by Gorka Games
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o6f7n4UhYq0?si=wV8LVcLNL8CPqWPW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```
+After reading the Unreal documentation I didn't really feel any more confident about materials so I found a simple youtube tutorial for a water material. It was only 4 minutes long which I thought was good since I had already spent so much time reading documentation.
+ 
+
+- Used single layer water shading model.
+- Plugged parameters into refraction, opacity and base colour to create a simple water material.
+- Waternormal in texture sample for waves. 
+- Panner node to make the waves move.
+- Waves moving on both axis for a realistic effect. 
+- Texture sample nodes connected by a blend node and plugged into normal. 
+
+The video used starter content which made it eaxsy to follow along. All blueprints were shown and Gorka Games explains what the various nodes do which gave me the confidence to create my own water material. 
+
+For a simple material this video is very good, however it's not an in depth tutorial. This did not really bother me as I was more interested in the basics, and wanted to do further exploration on my own within the Unreal Engine.
+
 
 ## Implementation
 
 ### What was the process of completing the task? What influenced your decision making?
 
-- What was the process of completing the task at hand? Did you do any initial planning?
-- Did you receive any feedback from users, peers or lecturers? How did you react to it?
-- I used pair programming for this task, similairly to last week but this time I was the navigator which gave me a new perspective. I was now able to better understand both roles within pair programming.
+- This was another task where I used pair programming, this time with me as the navigator. It was helpful to experience pair programming from another perspective.
+- We wanted to create a semi-realistic water material. 
 
 <br>
 
-```csharp
-using UnityEngine;
-public class HelloWorld : MonoBehaviour 
-{
-    public void Start() 
-    {
-        Debug.Log("Hello World!");
-    }
-}
-```
-*Figure 1. An example of using a script as a figure. This script has a `Start()` method!*
+*Figure 1. Blueprints for Water Material 1*
+
+<iframe src="https://blueprintue.com/render/gipcqyu7/" scrolling="no" allowfullscreen></iframe>
+
+- For our base colour we wanted to do a gradient to make the middle of the water seem deeper. To achieve this we used Lerp to connect our lighter blue, darker blue, and radialgradientexponential node. The gradient node created a circular gradient.
+- For our waves, we created them using a texcoord node. We moved them using panner and time nodes.
+- We used the Fresnel node to make our material reflect light differently based on the viewing angle. This gave the water a more realistic, dynamic effect, rather than being the same from all angles. 
+- For extra noise we used a Perlin noise texture sample. Again, this just gives the water a bit more of a realistic look. 
+
 
 ### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
 
@@ -113,9 +132,8 @@ Video game development (2024) In: Wikipedia. At: https://en.wikipedia.org/w/inde
 
 ## Declared Assets
 
-- Please use the [harvard referencing convention](https://mylibrary.uca.ac.uk/referencing).
 
-Infinity Blade: Adversaries in Epic Content - UE Marketplace (s.d.) At: https://www.unrealengine.com/marketplace/en-US/product/infinity-blade-enemies (Accessed  09/09/2024).
+ChatGPT (s.d.) At: https://chatgpt.com (Accessed  10/11/2024).
 
 ---
 
