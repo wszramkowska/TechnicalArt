@@ -109,6 +109,7 @@ I found this video to be a great learning tool. It gave me a base to work from, 
 
 ###### Embers
 - Used the fountain template as a base.
+- Made the particles small using uniform sprite size.
 
 
 <br>
