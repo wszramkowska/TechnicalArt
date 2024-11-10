@@ -136,7 +136,7 @@ After creating my semi realistic fire particle I had a go at making a more simpl
 
 
 
-- [Fire Particle System](https://www.youtube.com/watch?v=TQfRk6fm998&ab_channel=WSzramkowska)
+[Fire Particle System](https://www.youtube.com/watch?v=TQfRk6fm998&ab_channel=WSzramkowska)
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TQfRk6fm998?si=CakYgXliBS5EyVxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
