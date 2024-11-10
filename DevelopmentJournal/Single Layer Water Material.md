@@ -10,25 +10,17 @@ Sid Szramkowska
 
 ### What sources or references have you identified as relevant to this task?
 
-- What type of sources did you identity and want to explore? How would you justify it in reference to the brief set? Think about the focus of the brief.
-- What type of sources do you want to avoid? How could these kinds of sources be detrimental to the user experience, immersion or implementation?
 
 For this task I will be creating a single layer water material in Unreal. As I did  for previous tasks, I will be looking at Unreal documentation to give me a foundation level of knowledge.
 
+My secondary source will be a video as I find these the most helpful for me. This task is also quite artistic so I think visuals will be key to understanding how materials in Unreal work.
 
-```Markdown
-# Example
-
-As I have done research regarding the audio identity and developing audio assets for this project in previous formative assignments. I wanted to look into specific Unreal and Wwise systems that will help create a more immersive experience. I wanted to focus on official documentation to improve my ability to learn new techniques without explicit instructions.
-
-I also wanted a creative source to help develop the parachute audio assets and learn how it should function within the game’s narrative.
-```
 
 #### Sources
 
-- An opening paragraph about the source stating the author, developer or organisation, this paragraph should explain the source's influence, credentials, critical reception, awards, reputation or any issues with the source. For example, if the source is not reputable. If the source is a game, the issues that occurred during development or if had a poor launch.
-- List the aspects analysed in reference to the current task.
-- An ending paragraph stating what you enjoyed or disliked, what you agreed with or not agree with.
+##### Unreal Documentation
+
+
 
 ```Markdown
 # Example Documentation

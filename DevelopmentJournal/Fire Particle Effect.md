@@ -23,9 +23,6 @@ For this task I will be creating a fire particle effect using Niagara. As it is 
 
 ##### Unreal Documentation
 
-- An opening paragraph about the source stating the author, developer or organisation, this paragraph should explain the source's influence, credentials, critical reception, awards, reputation or any issues with the source. For example, if the source is not reputable. If the source is a game, the issues that occurred during development or if had a poor launch.
-- List the aspects analysed in reference to the current task.
-- An ending paragraph stating what you enjoyed or disliked, what you agreed with or not agree with.
 
 When looking at Unreal documentation I found there was actually quite a lot of information about Niagara (Niagara Overview | Unreal Engine 4.27 Documentation | Epic Developer Community, s.d.). I mainly looked at the core Niagara Components and the available templates, but there was also a section on Niagara Paradigms which was an interesting read and something I could potentially use in the future.
 
@@ -71,14 +68,6 @@ Another important setting for me was the Sprite renderer where I could add a mat
 The video also taught me how to use the 'color from curve' setting which gives you a colour ramp so you can add multiple colours and choose how they are blended.Top markers on the ramp control the colour, whilst the bottom markers control opacity. This will be valuable when trying to recreate the colour of flames, which blend yellows, oranges and reds.
 
 I found this video to be a great learning tool. It gave me a base to work from, where I could play around with the modules to create my own fire effect. All of the information was up to date and worked with my version of Unreal.
-
-
-
-
-
-
-
-
 
 
 ## Implementation
