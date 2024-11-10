@@ -110,25 +110,19 @@ I found this video to be a great learning tool. It gave me a base to work from, 
 ###### Embers
 - Used the fountain template as a base.
 - Made the particles small using uniform sprite size.
+- I copy and pasted the colour module from my flame emitter to match the embers to the flames.
 
+
+After creating my semi realistic fire particle I had a go at making a more simplistic stylised version. I was able to apply many of the skills I learned and mess around with parameters. Although not as detailed, I really like how it looks and can see it working well for a stylised game.
 
 <br>
 
-```csharp
-using UnityEngine;
-public class HelloWorld : MonoBehaviour 
-{
-    public void Start() 
-    {
-        Debug.Log("Hello World!");
-    }
-}
-```
-*Figure 1. An example of using a script as a figure. This script has a `Start()` method!*
+
 
 ### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
 
-- Did you try any new software or approaches? How did the effect development?
+- To make my fire more realistic I added a glow that would come off it and cast to its surroundings (ground, walls etc.)
+- To do this I added a Light Renderer module.
 
 <br>
 
@@ -140,31 +134,32 @@ public class HelloWorld : MonoBehaviour
 
 ## Outcome
 
-Here you can put links required for delivery of the task, ensure they are properly labelled appropriately and the links function. The required components can vary between tasks, you can find a definative list in the Assessment Information. Images and code snippets can be embedded and annotated if appropriate.
 
-- [Example Video Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
-- [Example Repo Link](https://github.com/githubtraining/hellogitworld)
-- [Example Build Link](https://samperson.itch.io/desktop-goose)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=C4v0qHaYuEISAC01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Fire Particle System](https://www.youtube.com/watch?v=TQfRk6fm998&ab_channel=WSzramkowska)
 
-*Figure 3. An example of an embedded video using a HTML code snippet.*
 
-<iframe frameborder="0" src="https://itch.io/embed/2374819" width="552" height="167"><a href="https://bitboyb.itch.io/nephilim-resurrection">Nephilim Resurrection (BETA) by bitboyb</a></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TQfRk6fm998?si=CakYgXliBS5EyVxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-*Figure 4. An example of a itch.io widget*
+*Figure 1. Fire Particle Effect*
+
+
 
 ## Critical Reflection
 
 ### What did or did not work well and why?
 
-- What did not work well? What parts of the assignment that you felt did not fit the brief or ended up being lacklustre.
-- What did you think went very well? Were there any specific aspects you thought were very good?
+- I thought the task was very successful. I liked the visuals of my fire effects.
+- I layered multiple emitters to create a semi-realistic fire effect.
+- I used various modules and edited multiple parameters to achieve my fire effect.
+- I created two versions, a simplistic stylised fire and a semi-realistic fire. This helped better my understanding of the capabilities of the Niagara System.
+- There are still many modules I haven't used which would take time and practice to learn.
 
 ### What would you do differently next time?
 
-- I wanted to create a semi-realistic fire effect which I think I managed to achieve, however I think it would also be interesting to experiment with different stylisations. For example a more cartoon-like fire effect. 
-- I  could also try to create an effect without using a template to further my knowledge, although I don't think it is a necessary skill for me as a developer.
+- I  could try to create an effect without using a template to further my knowledge, although I don't think it is a necessary skill for me as a developer.
+- I could also add more emitters for a more complex fire system. For example heat distortion.
+- I would also like to try creating effects other than fire.
 
 ## Bibliography
 
