@@ -108,7 +108,7 @@ Our second water material was definitely much easier and quicker to make however
 
 ## Outcome
 
-- [Single Layer Water Material Task](https://www.youtube.com/watch?v=egKXXhncoOs&ab_channel=WSzramkowska)
+[Single Layer Water Material Task](https://www.youtube.com/watch?v=egKXXhncoOs&ab_channel=WSzramkowska)
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/egKXXhncoOs?si=Hgm2wNvu7-tS5Hmp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
