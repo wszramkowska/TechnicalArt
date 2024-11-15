@@ -10,7 +10,9 @@ Sid Szramkowska
 
 ### What sources or references have you identified as relevant to this task?
 
+I will be looking at Unreal documentation to get a grasp on how physics works within the engine, and the different ways I am able to manipulate it. My task for this week will be to make a physics door so I will be focusing on collision and joints or hinges. Over the course of my project Unreal documentation has always been very reliable for my research and has usually been a great place to start for me.
 
+My other source will be a video tutorial as it helps me narrow down my specific task and I think will give me a great base to then further experiment. 
 
 
 
@@ -18,158 +20,100 @@ Sid Szramkowska
 
 
 
-
-In Unreal Engine, physics bodies are components used to simulate realistic physical interactions and behavior for objects within a game or interactive experience. Unreal Engine’s physics system, powered by NVIDIA's PhysX or Chaos (in later versions), allows for objects to react to forces like gravity, collisions, and other forces. Here’s a breakdown of what physics bodies are and how they're used:
-
-1. Physics Bodies and Rigid Bodies
-A physics body is often a part of a rigid body in Unreal Engine, which refers to an object that can move, rotate, and be affected by physical forces without deforming (like a box or a ball).
-These bodies are typically represented by collision shapes (such as spheres, boxes, or custom meshes) that are added to an actor or a skeletal mesh to determine how it should react to physical forces.
-2. Physics Assets
-Physics bodies are often used in conjunction with Physics Assets for skeletal meshes, which is a set of rigid bodies and constraints associated with a character or animated object.
-A Physics Asset contains Physics Bodies for each bone or part of the mesh, allowing for interactions like ragdoll effects, joint constraints, and more realistic movement of limbs.
-3. Collision and Simulation
-Physics bodies include collision properties, which define how they interact with other objects in the environment.
-You can set properties like mass, linear and angular damping, friction, restitution (bounciness), and simulate responses to forces such as gravity, wind, or player-applied forces.
-4. Constraints and Joints
-In Unreal, you can use constraints to control how physics bodies are allowed to move. This can be useful for creating joints or hinges, such as connecting a door to its frame or making a chain with linked segments.
-Constraints allow you to specify limits, like rotation angles and motion in specific directions, helping create realistic or stylized interactions between connected physics bodies.
-5. Dynamic vs. Static
-Physics bodies can be set to be dynamic (affected by physics forces) or static (immovable and unaffected by physics forces). For example, a rock that falls when hit is dynamic, while the ground is usually static.
-6. Common Uses in Unreal Engine
-Characters: Using physics bodies in skeletal meshes to simulate body parts’ motion or add ragdoll effects.
-Vehicles: Creating accurate physics simulations for moving parts and realistic vehicle movement.
-Environmental Interactions: Allowing objects to respond to explosions, collisions, and other in-game forces.
-Physics-based Puzzles: Building objects that move, rotate, or react in ways that players can use to solve puzzles.
-Practical Example
-If you wanted to simulate a table breaking upon impact, you might add physics bodies to each table leg and the tabletop, defining how each part should move when a force (like a player or projectile) collides with it.
-
-Unreal Engine's Physics Bodies give developers tools to make objects feel grounded and believable in a game world by handling the heavy lifting for real-world interactions.
-
-
-
-
-
-
-
-
 ##### Unreal Documentation
 
-Unreal documentation for materials is incredibly vast and seems to have various detailed pages to do with specific materials or their functions. Since I am new to materials in Unreal, so I stuck with the 'Getting Started' section of the Materials documentation (Unreal Engine Materials | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.). Within 'Getting Started' I used the essential material concepts documentation (Essential Unreal Engine Material Concepts | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.) to learn some of the basics.
+I found various Unreal documentation to do with physics, starting with the general Physics documentation (Physics in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.). In Unreal Engine, physics bodies are components used to simulate realistic physical interactions and behavior for objects within a game or interactive experience. Unreal Engine’s physics system, powered by NVIDIA's PhysX or Chaos (in later versions), allows for objects to react to forces like gravity, collisions, and other forces.
+I also specifically looked at documentation for collision (Collision Overview | Unreal Engine 4.27 Documentation | Epic Developer Community, s.d.) and constraints (Constraints User Guide | Unreal Engine 4.27 Documentation | Epic Developer Community, s.d.) as I knew I would need these to create my physics door.
 
-###### Materials
-Control the visual appearance of objects by defining surface characteristics like color, reflectivity, roughness, and transparency, which dictate light interaction.
+1. Physics Bodies and Rigid Bodies
+- A physics body is often a part of a rigid body in Unreal Engine, which refers to an object that can move, rotate, and be affected by physical forces without deforming (like a box or a ball).
+- These bodies are typically represented by collision shapes (such as spheres, boxes, or custom meshes) that are added to an actor or a skeletal mesh to determine how it should react to physical forces.
+2. Physics Assets
+- Physics bodies are often used in conjunction with Physics Assets for skeletal meshes, which is a set of rigid bodies and constraints associated with a character or animated object.
+- A Physics Asset contains Physics Bodies for each bone or part of the mesh, allowing for interactions like ragdoll effects, joint constraints, and more realistic movement of limbs.
+3. Collision and Simulation
+- Physics bodies include collision properties, which define how they interact with other objects in the environment.
+- You can set properties like mass, linear and angular damping, friction, restitution (bounciness), and simulate responses to forces such as gravity, wind, or player-applied forces.
+4. Constraints and Joints
+- In Unreal, you can use constraints to control how physics bodies are allowed to move. This can be useful for creating joints or hinges, such as connecting a door to its frame.
+- Constraints allow you to specify limits, like rotation angles and motion in specific directions, helping create realistic or stylized interactions between connected physics bodies.
+5. Dynamic vs. Static
+- Physics bodies can be set to be dynamic (affected by physics forces) or static (immovable and unaffected by physics forces). For example, a rock that falls when hit is dynamic, while the ground is usually static.
+6. Common Uses in Unreal Engine
+- Characters: Using physics bodies in skeletal meshes to simulate body parts’ motion or add ragdoll effects.
+- Vehicles: Creating accurate physics simulations for moving parts and realistic vehicle movement.
+- Environmental Interactions: Allowing objects to respond to explosions, collisions, and other in-game forces.
+- Physics-based Puzzles: Building objects that move, rotate, or react in ways that players can use to solve puzzles.
 
-###### Shading Pipeline
-Unreal Engine uses shaders (written in HLSL) to determine how each pixel and vertex should render on screen. Users create Materials visually in the Material Editor instead of coding in HLSL.
 
-###### Material Editor
-Materials are built using nodes (Material Expressions) that create a shader graph, where inputs connect to the Main Material Node. Properties like Material Domain, Blend Mode, and Shading Model determine the Material's foundational settings.
+Unreal Engine's Physics Bodies give developers tools to make objects feel believable in a game world by handling the heavy lifting for real-world interactions.
 
-###### Material Expressions
-These nodes perform specific tasks, and by connecting them, users effectively write shader code without needing direct HLSL input. Expressions allow customization of data flow and control of aspects like color, opacity, and roughness.
+The Unreal Documentation has a large amount of information however it is fairly easy to navigate as there are lots of pages dedicated to the various uses, tools and tutorials. They all have an easy to understand title that allowed me to quickly get to the information I needed, since I knew I would need collision and constraints. If I wanted to learn physics from scratch and didn't have a specific goal in mind, I think the documentation would be much too long to read.
 
-###### Material Instances and Functions
-Material Instances allow quick variations of a base Material, ideal for assets that need similar textures with different colors or characteristics.
-Material Functions package commonly used node networks, enabling reusable elements across different Materials.
 
-###### Data Types and Flow
-Unreal Engine utilizes RGBA (float4) color values, with data types like float, float2, float3, and float4 to control Material expressions. Knowing data types is essential for creating complex Materials.
 
-The Unreal documentation is very detailed and the documentation I looked at was just one of many available. The inclusion of screenshots was helpful to orientate myself within the Engine and actually apply the information given to me. There are also multiple links to other documentation so anything I didn't understand, I was able to easily catch up on.
+##### Youtube Video How to Make a Physics Door in Unreal Engine 5 by Gorka Games
 
-Although there was a lot of information provided, I found myself getting lost quite quickly. I don't think this documentation is necessarily meant to be read all in one go, but maybe more as a point of reference when you have a specific problem or question. Otherwise it is just too much.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/30G-WJ5aMpA?si=W3SUcSvs8BgPEC4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-##### Youtube Video How to Make a Simple Water Material in Unreal Engine 5 by Gorka Games
+I looked for a short youtube video to explain how to do my task in simple terms, which would allow me to expand on it myself. I found a youtube video by Gorka Games which shows how to make a physics door.
+The video explains how to add collision to a static mesh and then uses a physics constraint component in order to operate the door swing.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o6f7n4UhYq0?si=wV8LVcLNL8CPqWPW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Although the video did its job, and I was able to successfully make a physics door, I think it is only good for simple projects. If I wanted animation, or to press a specific button to open the door, I would definitely have to find a different video. It also did not use any blueprints, which I think might have been helpful.
 
-After reading the Unreal documentation I didn't really feel any more confident about materials so I found a simple youtube tutorial for a water material. It was only 4 minutes long which I thought was good since I had already spent so much time reading documentation.
- 
-
-- Used single layer water shading model.
-- Plugged parameters into refraction, opacity and base colour to create a simple water material.
-- Waternormal in texture sample for waves. 
-- Panner node to make the waves move.
-- Waves moving on both axis for a realistic effect. 
-- Texture sample nodes connected by a blend node and plugged into normal. 
-
-The video used starter content which made it eaxsy to follow along. All blueprints were shown and Gorka Games explains what the various nodes do which gave me the confidence to create my own water material. 
-
-For a simple material this video is very good, however it's not an in depth tutorial. This did not really bother me as I was more interested in the basics, and wanted to do further exploration on my own within the Unreal Engine.
 
 
 ## Implementation
 
 ### What was the process of completing the task? What influenced your decision making?
 
-- This was another task where I used pair programming, this time with me as the navigator. It was helpful to experience pair programming from another perspective.
-- We wanted to create a semi-realistic water material. 
+- Added a static mesh, using a door model from the Unreal starter content. This consisted of a door and a door frame.
+- Added a box simplified collision to the door so I could enable simulation physics.
+- Added Physics Constraint component and changed the angular limits to only allow the swing motion for the door to open. Limited the angle to 90 degrees.
+- Moved the pivot to the corner of the door.
+- Changed the angular motor to twist and swing so the door would swing back to the frame.
+- For a more realistic door opening motion I increased the angular damping.
+
 
 <br>
-
-*Figure 1. Blueprints for Water Material 1*
-
-<iframe src="https://blueprintue.com/render/gipcqyu7/" scrolling="no" allowfullscreen></iframe>
-
-- For our base colour we wanted to do a gradient to make the middle of the water seem deeper. To achieve this we used Lerp to connect our lighter blue, darker blue, and radialgradientexponential node. The gradient node created a circular gradient.
-- For our waves, we created them using a texcoord node. We moved them using panner and time nodes.
-- We used the Fresnel node to make our material reflect light differently based on the viewing angle. This gave the water a more realistic, dynamic effect, rather than being the same from all angles. 
-- For extra noise we used a Perlin noise texture sample. Again, this just gives the water a bit more of a realistic look. 
-
-*Figure 2. Blueprints for Water Material 2*
-
-<iframe src="https://blueprintue.com/render/seb5yad-/" scrolling="no" allowfullscreen></iframe>
-
-- Our first attempt at a water material ended up being slightly more complex, so we had another go to create a simple single layer water material.
-- We used the singlelayerwater shading model.
-- We plugged our green and pink colours into the single layer water material node.
-- For the waves we used a water texture sample from the starter content.
-- We added a noise texture sample to make the material a bit more interesting.
-
-Our second water material was definitely much easier and quicker to make however, visually, I prefer our first water material.
-
-
-
-### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
-
-- We tried to create a gradient to give the water more depth. Although it's not as obvious visually, it was still a useful skill to learn.
-
 
 
 ### Did you have any technical difficulties? If so, what were they and did you manage to overcome them?
 
-- We struggled to make the waves realistic. At first they were quite plain even though we had added noise. To help this we used a NormalFromHeightmap node which then gave our desired effect. This node converts a height map texture into a normal map. 
+- Due to the simplicity of the task I didn't really have an difficulties.
 
 ## Outcome
 
-[Single Layer Water Material Task](https://www.youtube.com/watch?v=egKXXhncoOs&ab_channel=WSzramkowska)
+[Physics Door Task](https://www.youtube.com/watch?v=ICXiZrI8GDA&ab_channel=WSzramkowska)
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/egKXXhncoOs?si=Hgm2wNvu7-tS5Hmp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ICXiZrI8GDA?si=3lkZS_RTy7MUs0to" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+*Figure 1. Physics Door*
 
 ## Critical Reflection
 
 ### What did or did not work well and why?
 
-- Creating a material from scratch is quite difficult. Although I think the water materials look good, they may not be realistic in terms of the way the waves move. To help this I could look at water in real life, or videos of water and try replicate those movements.
-- However overall I am happy with these materials as a first go. I like the waves moving in different directions, I think it really gives the water life. 
+Overall I think the door works well and looks quite realistic. I was pleasantly surprised at how simple this was to make, which has given me a bit of confidence with physics inside the Unreal Engine. I am excited to explore more ways of using these physics and I think it will be very helpful for my project this term.
+I think looking at a more complex system could have helped me learn and challenged me a bit more, however when developing video games I still think it is good to have these simple methods and to not overcomplicate things unnecessarily. 
 
 ### What would you do differently next time?
 
-- In the future I could try create materials other than water. This would allow for more experimentation with things such as emission or metallic materials. 
-- It would also be interesting to add reflections. 
+- I would like to try this with different types of doors, such as swinging gates, or hatches that might swing vertically rather than horizontally which would need a different pivot.
 
 ## Bibliography
 
-Unreal Engine Materials | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-materials (Accessed  10/11/2024).
+Physics in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/physics-in-unreal-engine (Accessed  15/11/2024).
 
+Constraints User Guide | Unreal Engine 4.27 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/constraints-user-guide-in-unreal-engine (Accessed  15/11/2024).
 
-Essential Unreal Engine Material Concepts | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/essential-unreal-engine-material-concepts (Accessed  10/11/2024).
+Collision Overview | Unreal Engine 4.27 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/collision-in-unreal-engine---overview (Accessed  15/11/2024).
 
-How to Make a Simple Water Material in Unreal Engine 5 (2023) At: https://www.youtube.com/watch?v=o6f7n4UhYq0 (Accessed  10/11/2024).
+How to Make a Physics Door in Unreal Engine 5 (s.d.) At: https://www.youtube.com/watch?v=30G-WJ5aMpA (Accessed  15/11/2024).
+
 
 ## Declared Assets
 
-
+Used to assist in writing Physics Door Development Journal:
 ChatGPT (s.d.) At: https://chatgpt.com (Accessed  10/11/2024).
