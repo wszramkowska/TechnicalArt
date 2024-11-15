@@ -19,8 +19,71 @@ Another source I would use would be a video as I find those most helpful for my 
 
 ##### Unreal Documentation
 
+I looked at the animation system overview documentation (Animation System Overview | Unreal Engine 4.27 Documentation | Epic Developer Community, s.d.) which explained a lot of the key features of the animation system and even had a diagram which explains where certain parts of the animation system are created and edited.
 
 
+Overview of the UE4 Animation System
+Purpose: Provides tools for realistic animation through skeletal and morph-based mesh deformation, enhancing player movement and special moves.
+Components: Animation Sequences, Animation Blueprints, Blend Spaces, Skeletal Controls, and State Machines.
+Key Concepts and Tools
+
+Skeleton:
+
+Manages bone hierarchy.
+Allows multiple Skeletal Meshes to share animations via a single Skeleton.
+
+Skeletal Mesh:
+
+Represents the character's visual appearance.
+Modified in the Skeletal Mesh Editor.
+
+Animation Sequences:
+
+Single animations for Skeletal Meshes.
+Keyframes specify bone position, rotation, and scale.
+
+Animation Notifications (Notifies):
+
+Events triggered at specific points during Animation Sequences.
+Common uses: footsteps, particle effects, and custom game events.
+Animation Tools in UE4
+
+Animation Blueprint Editor:
+
+Controls animation logic.
+Enables blending, bone control, and frame-by-frame pose definition.
+
+Blend Spaces:
+
+Blend between multiple animations based on two inputs.
+Reduces need for hard-coded blending nodes in Animation Blueprints.
+
+Animation Montages:
+
+Complex animation effects (e.g., loops, condition-based switching).
+Accessible through Blueprint Visual Scripting or code.
+
+Skeletal Controls:
+
+Direct control over Skeleton bones.
+Supports dynamic, procedural animation adjustments (e.g., IK chains, foot alignment).
+
+State Machines:
+
+Manages animation states (e.g., Idle, Movement, Jumping).
+Transition rules control blending between states.
+Simplifies animation design and visualizes state flow.
+Debugging and Visualization Tools
+
+Bone Rendering:
+
+ShowDebug Bones command displays Skeletal Mesh Bones in white lines.
+ShowDebugToggleSubCategory 3DBones command for 3D bone view.
+
+Animation Debug Output:
+
+ShowDebug Animation command provides detailed debug information in five sections.
+Toggle sections with ShowDebugToggleSubCategory for targeted debugging.
 
 ##### Youtube Video Fire Simulation FX in Unreal Engine Niagara | in 12 minutes by Motion Dreams
 
