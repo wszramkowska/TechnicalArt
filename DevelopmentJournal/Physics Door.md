@@ -59,7 +59,7 @@ The Unreal Documentation has a large amount of information however it is fairly 
 I looked for a short youtube video to explain how to do my task in simple terms, which would allow me to expand on it myself. I found a youtube video by Gorka Games which shows how to make a physics door.
 The video explains how to add collision to a static mesh and then uses a physics constraint component in order to operate the door swing.
 
-Although the video did its job, and I was able to successfully make a physics door, I think it is only good for simple projects. If I wanted animation, or to press a specific button to open the door, I would definitely have to find a different video. It also did not use any blueprints, which I think might have been helpful.
+Although the video did its job, and I was able to successfully make a physics door, I think it is only good for simple projects. If I wanted animation to open the door, I would definitely have to find a different video. It also did not use any blueprints, which I think might have been helpful.
 
 
 
