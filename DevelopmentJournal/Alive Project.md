@@ -7,7 +7,7 @@ Sid Szramkowska
 2106125
 
 
-The theme for this project is 'Alive' so I came up with a couple of initial ideas. One of the ideas was a simplified farming game where you would keep plants or crops alive. My second idea was an fps style game where you would have to continuously kill enemies in order to stay alive. However, since it was my first time making a game in Unreal, I thought these might be a bit too complicated, especially the farming game. I decided to go for a horror game where the player would be stuck in a building with monsters, trying to stay alive whilst looking for the exit.
+The theme for this project is 'Alive' so I came up with a couple of initial ideas. One of the ideas was a simplified farming game where you would keep plants or crops alive. My second idea was an fps style game where you would have to continuously kill enemies in order to stay alive. However, since it was my first time making a game in Unreal, I thought these might be a bit too complicated, especially the farming game. I decided to go for a game where the player would be stuck in a building with monsters, trying to stay alive whilst looking for the exit.
 
 ## Research
 
@@ -16,7 +16,9 @@ The theme for this project is 'Alive' so I came up with a couple of initial idea
 - What type of sources did you identity and want to explore? How would you justify it in reference to the brief set? Think about the focus of the brief.
 - What type of sources do you want to avoid? How could these kinds of sources be detrimental to the user experience, immersion or implementation?
 
-The theme for this project is 'Alive' so I came up with a couple of initial ideas.
+I wanted to look at some video games to get inspiration for my game, specifically some stealth or chase scenes in horror games. A couple games that came to mind were Outlast and Resident Evil Village which have many tense chase/stealth scenes. 
+
+
 
 ```Markdown
 # Example
