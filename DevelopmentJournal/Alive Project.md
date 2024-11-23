@@ -88,6 +88,11 @@ public class HelloWorld : MonoBehaviour
 
 - Did you have any issues completing the task? How did you overcome them?
 
+#####Door
+- opened too quick so I used a lerp node instead of setting my rotation inside of my door timeline 
+- only set relative rotation
+- doors were opening the opposite way so I added a multiply by -1 to the right door
+
 ## Outcome
 
 Here you can put links required for delivery of the task, ensure they are properly labelled appropriately and the links function. The required components can vary between tasks, you can find a definative list in the Assessment Information. Images and code snippets can be embedded and annotated if appropriate.
