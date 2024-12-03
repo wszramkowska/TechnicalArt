@@ -93,6 +93,13 @@ public class HelloWorld : MonoBehaviour
 - only set relative rotation
 - doors were opening the opposite way so I added a multiply by -1 to the right door
 
+#####Interact prompt
+- was too low down and player couldn't see it so i changed the 'space' to world instead of screen as my message doesnt need to appear in a 360 around the door
+- text was always shown so i had to set the initial visibility to off
+
+#####Enemy footsteps
+-DONT WORK
+
 ## Outcome
 
 Here you can put links required for delivery of the task, ensure they are properly labelled appropriately and the links function. The required components can vary between tasks, you can find a definative list in the Assessment Information. Images and code snippets can be embedded and annotated if appropriate.
