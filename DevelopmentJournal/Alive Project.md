@@ -97,8 +97,13 @@ public class HelloWorld : MonoBehaviour
 - was too low down and player couldn't see it so i changed the 'space' to world instead of screen as my message doesnt need to appear in a 360 around the door
 - text was always shown so i had to set the initial visibility to off
 
-#####Enemy footsteps
--DONT WORK
+#####Enemy sounds
+-footsteps did not work
+- fixed them by adding the play sound to my enemy walking and running animation, playing the sound when the foot was down
+- zombie breathing didn't work unless the player spawned within its radius, and wouldnt restart if the player left and returned to the radius
+- fixed this by checking play when silent
+
+
 
 ## Outcome
 
