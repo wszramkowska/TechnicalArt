@@ -1,0 +1,14 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/wikto/OneDrive/Documents/GitHub/TechnicalArt/TechnicalArt_Project/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/wikto/OneDrive/Documents/GitHub/TechnicalArt/TechnicalArt_Project/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset",
+				"C:/Users/wikto/OneDrive/Documents/GitHub/TechnicalArt/TechnicalArt_Project/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+			]
+		}
+	]
+}
