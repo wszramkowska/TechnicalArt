@@ -287,6 +287,27 @@ I wanted my game to be enjoyable for multiple runs and not just a one shot as th
 I think players can get easily frustrated when the objective of the game is not clear. I do not want players to get discouraged and drop my game so I decided to add a simple quest style bar in the top right which would direct the player. In addition I would add a message to the door saying something like "Press E to open" to make the controls of the game more obvious.
 
 #### Randomly Spawning Key
+I found a video by RubaDev on how to randomize actor spawn locations and adapted this to my blueprints in order to get different spawn locations for my key each time the level starts. 
+
+- Set 5 target points where I wanted my key to spawn. I didn't want completely random spawn points as I wanted the locaction of the key to be fair and to make sense within the environment.
+- Referenced these target points in my level blueprint and put them in an array.
+- Got the locations and randomised them using 'random integer in range'
+- Spawned the key
+
+<iframe src="https://blueprintue.com/render/gfmawe9q/" scrolling="no" allowfullscreen></iframe>
+
+*Figure . blueprints for spawning key in random locations*
+
+#### 'Quest' bar
+- I created a widget with a small quest bar in the top right of the screen. I added this to viewport from the BP_Key blueprint.
+- Initially set to 'find the key'
+- Upon player picking up the key I set the text to 'Escape' 
+
+<iframe src="https://blueprintue.com/render/nc8-esjh/" scrolling="no" allowfullscreen></iframe>
+
+*Figure . blueprints for adding the quest bar to viewport and setting the text after picking up ley*
+
+
 
 
 
