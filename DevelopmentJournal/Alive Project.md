@@ -335,12 +335,7 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 *Figure . blueprints for interaction prompt*
 
-
-
 <br>
-
-![onhover image description](https://beforesandafters.com/wp-content/uploads/2021/05/Welcome-to-Unreal-Engine-5-Early-Access-11-16-screenshot.png)
-*Figure 2. An example of an image as a figure. This image shows where to package your Unreal project!.*
 
 ### Did you have any technical difficulties? If so, what were they and did you manage to overcome them?
 
@@ -429,34 +424,30 @@ How To Create A Main Menu - Unreal Engine 5 Tutorial (2022) At: https://www.yout
 How To Light Interiors In Unreal Engine 4 & 5 (Tutorial) (2022) At: https://www.youtube.com/watch?v=PKjnYulklNA (Accessed  05/12/2024).
 
 
-
-
-
-
-
-
-
-
-
 ## Declared Assets
 
-- Please use the [harvard referencing convention](https://mylibrary.uca.ac.uk/referencing).
+Medieval Dungeon - Infuse Studio (s.d.) At: https://www.fab.com/listings/c13bd0dc-ac4d-4595-b284-f81386b2e6ef (Accessed 05/12/2024)
 
-Infinity Blade: Adversaries in Epic Content - UE Marketplace (s.d.) At: https://www.unrealengine.com/marketplace/en-US/product/infinity-blade-enemies (Accessed  09/09/2024).
+Zombie breathing | Huminaatio (s.d.) At: https://pixabay.com/sound-effects/zombie-breathing-54693/ (Accessed  05/12/2024).
 
----
+Zombie Screaming | Alex_Jauk (s.d.) At: https://pixabay.com/sound-effects/zombie-screaming-207590/ (Accessed  05/12/2024).
 
-```Markdown
-# General Tips
+Boys sneaker, single footstep on concrete 5 Sound Effect - Download FREE - ZapSplat (s.d.) At: https://www.zapsplat.com/music/boys-sneaker-single-footstep-on-concrete-5/ (Accessed  05/12/2024).
 
-- Use plenty of images and videos to demonstrate your point. You can embed YouTube tutorials, your own recordings, etc.
-- Always reference! Even documentation, tutorials and anything you used for your assignment. Use an inline reference for the sentence and a bibliography reference at the end.
-- Word count is not important, you can also chose to use bullet points. As long as it is clear and readable, the format your decide to use can be flexible.
-- You are free to use AI but please ensure you have made a note in the declared assets, for example if you have a script called Test.cs , you should note that AI was used to in the creation of this script. You can use a bullet point list for each asset used like:
+Man breathing, open mouth, medium speed and heavy Sound Effect - Download FREE - ZapSplat (s.d.) At: https://www.zapsplat.com/music/man-breathing-open-mouth-medium-speed-and-heavy/ (Accessed  05/12/2024).
+
+Dungeon ambience, cold dark and eerie droning tone with howling wind outside and water drips, could also be cave Sound Effect - Download FREE - ZapSplat (s.d.) At: https://www.zapsplat.com/music/dungeon-ambience-cold-dark-and-eerie-droning-tone-with-howling-wind-outside-and-water-drips-could-also-be-cave/ (Accessed  05/12/2024).
+
+Horror Background Atmosphere #11 | Royalty-free Music (s.d.) At: https://pixabay.com/music/mystery-horror-background-atmosphere-11-240870/ (Accessed  05/12/2024).
+
+
+Used to assist in finding research material:
+Chat GPT
+
+
 
 The following assets were created or modified with the use of GPT 4o:
 - Test.cs
 - AnotherScript.cs
 - Development Journal.html
 
-```
