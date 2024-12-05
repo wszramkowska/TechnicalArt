@@ -98,12 +98,11 @@ Due to my lack of experience with Unreal I did not want to set myself many aspir
 - Avoid enemies
 - Find the exit 
 
-#### Health System 
+#### Health and Damage System 
 The first thing I did in my project was create a health system. This is because it is one of the only things I am familiar with in Unreal due to some University tutorials on it. I used the third person template, so I did the health system in the BP_ThirdPersonCharacter.
 
 - Made a health bar widget blueprint, designes using a progress bar.
 
-![image alt](https://github.com/wszramkowska/TechnicalArt/blob/a899eaca08e9ffb4e1387ea7085d900b6a4a4e7d/map%20ss.PNG)
 
 <iframe src="https://blueprintue.com/render/s0uto83x/" scrolling="no" allowfullscreen></iframe>
 
@@ -115,19 +114,44 @@ The first thing I did in my project was create a health system. This is because 
 
 *Figure 2. Blueprints for player taking damage*
 
+- For my player death logic I disabled movement, added a game over widget and set the game to paused.
+
+<iframe src="https://blueprintue.com/render/06o1thq7/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 3. Blueprints for player death*
+
 <br>
 
-```csharp
-using UnityEngine;
-public class HelloWorld : MonoBehaviour 
-{
-    public void Start() 
-    {
-        Debug.Log("Hello World!");
-    }
-}
-```
-*Figure 1. An example of using a script as a figure. This script has a `Start()` method!*
+#### Enemy AI Chase, Patrol, Deal Damage
+I knew I wanted my game to have enemies so I tackled enemy AI next. I found a good youtube video by Pixel helmet (Unreal Engine 5 AI Patrol and Chase Tutorial, 2023) which showcased how to create an enemy ai which patrols and chases the player upon seeing them.
+
+- I made a blueprint for my enemy.
+- I used NavMeshBoundsVolume to determine the area my enemy ai would work within.
+- I gave my enemy a PawnSensing component, which allowed me to choose its sight radius.
+- Initially I used a mannequin from the Unreal starter content, but later switched my static mesh to a zombie I found on Mixamo.
+- My patrol logic got a random location within the Nav mesh bounds and moved the ai to that location.
+
+<iframe src="https://blueprintue.com/render/iqmhoil-/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 4. Blueprints for enemy patrol*
+<br>
+- My chase logic uses On See Pawn from the PawnSensing component
+- When the enemy sees the player I play a running animation and increase speed.
+- Then I move the ai to the player location.
+- If the player is hidden for 2 seconds, movement speed and animation is set back to walking.
+- If the ai successfully reaches the player, it will attack.
+
+<iframe src="https://blueprintue.com/render/ibymjtv8/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 5. Blueprints for enemy chase*
+
+#### Enemy Animations
+To animate my enemy I used animations from Mixamo. I used a combination of animation blueprints, blend spaces and animation montages. So far in my project I had a good understanding of what was going on but I really struggled with animations. To help I went over my Animation System task journal.
+
+
+
+
+
 
 ### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
 
@@ -189,9 +213,10 @@ Here you can put links required for delivery of the task, ensure they are proper
 
 ## Bibliography
 
-- Please use the [harvard referencing convention](https://mylibrary.uca.ac.uk/referencing).
+Unreal Engine 5 AI Patrol and Chase Tutorial (2023) At: https://www.youtube.com/watch?v=lbqZS-cgcQs (Accessed  03/11/2024).
 
-Video game development (2024) In: Wikipedia. At: https://en.wikipedia.org/w/index.php?title=Video_game_development&oldid=1240603537 (Accessed  03/09/2024).
+
+
 
 ## Declared Assets
 
