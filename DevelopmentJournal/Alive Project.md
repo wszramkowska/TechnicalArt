@@ -310,16 +310,9 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 
 
-
-
-
-
-
-
-
 ### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
 
-- Did you try any new software or approaches? How did the effect development?
+- I used unstructured 
 
 <br>
 
@@ -349,11 +342,11 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 ## Outcome
 
-Here you can put links required for delivery of the task, ensure they are properly labelled appropriately and the links function. The required components can vary between tasks, you can find a definative list in the Assessment Information. Images and code snippets can be embedded and annotated if appropriate.
 
-- [Example Video Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
-- [Example Repo Link](https://github.com/githubtraining/hellogitworld)
-- [Example Build Link](https://samperson.itch.io/desktop-goose)
+
+- [Alive Below Gameplay Trailer](https://www.youtube.com/watch?v=kEkBX7NXY7w&t=89s&ab_channel=WSzramkowska)
+- [Technical Art Github Repository](https://github.com/wszramkowska/TechnicalArt)
+- [Alive Below Build](https://squlddy.itch.io/alive-below)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=C4v0qHaYuEISAC01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
