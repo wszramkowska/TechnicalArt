@@ -153,9 +153,17 @@ I knew I wanted my game to have enemies so I tackled enemy AI next. I found a go
 
 *Figure 6. Blueprints for enemy deal damage*
 
+<br>
  
 #### Enemy Animations
 To animate my enemy I used animations from Mixamo. I used a combination of animation blueprints, blend spaces and animation montages. So far in my project I had a good understanding of what was going on but I really struggled with animations. To help I went over my Animation System task journal so I could figure out idle, walk and run animations. I also found a youtube video by Lisowi (AI Attack Tutorial - Unreal Engine 5.2, 2023) which showed me how to play my attack animations once the enemy is in attack range of the player.
+
+- I made a blend space for my zombie character. This would transition between the idle, walking and run animation. 
+- I used this blend space in an animation blueprint. This would change the animation based on the speed of the enemy, so during chases it would play the running animation.
+
+<iframe src="https://blueprintue.com/render/uk4uthg-/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 7. Animation blueprint event graph*
 
 
 - I created an attack animation montage for my enemy, in case I wanted a variety of animations for the attack.
@@ -165,6 +173,26 @@ To animate my enemy I used animations from Mixamo. I used a combination of anima
 <iframe src="https://blueprintue.com/render/muk6va19/" scrolling="no" allowfullscreen></iframe>
 
 *Figure . Blueprints for enemy attack animation*
+
+<br>
+
+#### Building the map
+I looked through the asset packs on Fab and found a medieval dungeon asset pack by Infuse Studio which I thought would be perfect to help create an unsettling atmosphere in my game.
+
+- Small map to get the feeling of being trapped with the enemy.
+- Lots of 'rooms' for the player to explore the environment, and also to disorient the player, making it a bit more difficult to search for the exit.
+- The rooms gave me the idea to include a key the player would have to search for in order to unlock the exit. The key would force the player to move around the map more, which increases the likelihood of them encountering the enemy.
+- Slight variation in shape but the map is mostly just a rectangle, with more rectangles inside. This keeps it clean and fair. 
+- Since I decided to keep the map small I thought my game would work well with just the one enemy. This is when I had the idea to make the enemy a one shot kill on the player, which would add to the tension. This also meant I would no longer need the HP bar I made at the beginning of the project.
+
+<br>
+
+#### Interact: Key and door
+Since I had the idea to add a key into the game, I decided to work on it right away. I found a video tutorial by Matt Aspland (Door And Key System | How To Open A Locked Door With A Key In Unreal Engine 5 (Tutorial), 2023) on making a door and key system. This taught me how to create an interact input, how to animate my door using a timeline, and how to specify which key unlocks which door.
+
+- Made a blueprint interface for 'interact' and 'door'
+- 
+
 
 
 
@@ -236,6 +264,9 @@ Unreal Engine 5 Health and Damage System Tutorial [2023] (2023) At: https://www.
 Unreal Engine 5 AI Patrol and Chase Tutorial (2023) At: https://www.youtube.com/watch?v=lbqZS-cgcQs (Accessed  03/11/2024).
 
 AI Attack Tutorial - Unreal Engine 5.2 (2023) At: https://www.youtube.com/watch?v=N7CqOJNeAyU (Accessed  05/12/2024).
+
+Door And Key System | How To Open A Locked Door With A Key In Unreal Engine 5 (Tutorial) (2023) At: https://www.youtube.com/watch?v=Bcle9sSS4Oo (Accessed  05/12/2024).
+
 
 
 
