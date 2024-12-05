@@ -307,12 +307,15 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 *Figure . blueprints for adding the quest bar to viewport and setting the text after picking up ley*
 
+#### Press 'E' prompt on door
+- I made a widget and attached it to my door blueprint
+- I made the widget visible when the player was within the doors collision box.
+
+<iframe src="https://blueprintue.com/render/kk4k8d5g/" scrolling="no" allowfullscreen></iframe>
+
+*Figure . blueprints for interaction prompt*
 
 
-
-### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
-
-- I used unstructured 
 
 <br>
 
@@ -323,21 +326,26 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 - Did you have any issues completing the task? How did you overcome them?
 
-#####Door
+##### Door
 - opened too quick so I used a lerp node instead of setting my rotation inside of my door timeline 
 - only set relative rotation
 - doors were opening the opposite way so I added a multiply by -1 to the right door
 
-#####Interact prompt
+##### Interact prompt
 - was too low down and player couldn't see it so i changed the 'space' to world instead of screen as my message doesnt need to appear in a 360 around the door
 - text was always shown so i had to set the initial visibility to off
 
-#####Enemy sounds
--footsteps did not work
+##### Enemy sounds
+- footsteps did not work
 - fixed them by adding the play sound to my enemy walking and running animation, playing the sound when the foot was down
 - zombie breathing didn't work unless the player spawned within its radius, and wouldnt restart if the player left and returned to the radius
 - fixed this by checking play when silent
 
+##### Github
+- I had multiple difficulties with using github. Although I have used it for my previous tasks, this unit is the first time I have used github.
+- When I downloaded my Medieval Dungeon Asset Pack I was unable to commit and push my changes. To fix this I downloaded git LFS. However that still did not work so I ended up deleting assets I did not need so I was able to commit and push.
+- Despite having a .gitignore, whenever I made a build I could not commit my changes in github. I created a folder outside of the github repository, on my desktop, to fix this. However this still did not work so I had to manually delete the build folders within my repository. I also had to discard changes in the commit that were over 100mb, despite having git lfs set up.
+- In future projects I will set up git lfs at the start and will also double check my .gitignore is set up correctly. This will hopefully prevent these problems from happening.
 
 
 ## Outcome
