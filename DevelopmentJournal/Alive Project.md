@@ -103,6 +103,8 @@ The first thing I did in my project was create a health system. This is because 
 
 - Made a health bar widget blueprint, designes using a progress bar.
 
+![image alt](https://github.com/wszramkowska/TechnicalArt/blob/a899eaca08e9ffb4e1387ea7085d900b6a4a4e7d/map%20ss.PNG)
+
 <iframe src="https://blueprintue.com/render/s0uto83x/" scrolling="no" allowfullscreen></iframe>
 
 *Figure 1. Blueprints for updating the health bar* 
