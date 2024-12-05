@@ -94,6 +94,25 @@ I found their implementation and choice great for the context of their narrative
 #### Planning 
 Due to my lack of experience with Unreal I did not want to set myself many aspirational goals which I then might not be able to complete. Instead I kept my mechanics simple and aimed for polish.
 
+- Trapped in a building
+- Avoid enemies
+- Find the exit 
+
+#### Health System 
+The first thing I did in my project was create a health system. This is because it is one of the only things I am familiar with in Unreal due to some University tutorials on it. I used the third person template, so I did the health system in the BP_ThirdPersonCharacter.
+
+- Made a health bar widget blueprint, designes using a progress bar.
+
+<iframe src="https://blueprintue.com/render/s0uto83x/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 1. Blueprints for updating the health bar* 
+
+- I used AnyDamage and took current health away from my max health. When health is 0 or below the player will die.
+
+<iframe src="https://blueprintue.com/render/3en7eame/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 2. Blueprints for player taking damage*
+
 <br>
 
 ```csharp
