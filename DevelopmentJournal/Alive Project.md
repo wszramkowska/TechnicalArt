@@ -1,4 +1,4 @@
-# [TASK NAME]
+# Alive Below
 
 Technical Art
 
@@ -69,8 +69,7 @@ Overall I think I can learn a lot from this section of the game in creating a te
 
 ### What was the process of completing the task? What influenced your decision making?
 
-- What was the process of completing the task at hand? Did you do any initial planning?
-- Did you receive any feedback from users, peers or lecturers? How did you react to it?
+
 
 #### Planning 
 Due to my lack of experience with Unreal I did not want to set myself many aspirational goals which I then might not be able to complete. Instead I kept my mechanics simple and aimed for polish.
@@ -209,6 +208,34 @@ For lighting I knew I wanted my level to be fairly dark in order to create a sca
 - Decreasing field of view, meaning the player sees less and the enemy is scarier.
 - Increased intensity of fog to add to the creepy atmosphere.
 
+#### Audio 
+Audio is a key feature in horror games and can really set the tone and mood of the game. I got my sounds and music from Zapsplat and Pixabay.
+
+- I used meta sound source for audio 
+- Most of my sounds are set up quite basic escept breathing which has a filter and limiter as it was originally too loud and obnoxious.
+
+<iframe src="https://blueprintue.com/render/kdmyjw2m/" scrolling="no" allowfullscreen></iframe>
+
+*Figure . Meta sound source for human breathing*
+
+- I created sound attenuation for fire, to add a bit of liveliness to the environment.
+- I created sound attenuation for the zombie footsteps so the player can only hear them when they are close by.
+- Footstep sounds were done by adding a 'play sound' notify to the zombie walk and run animations. I timed these notifies with when the zombies foot was on the ground. This allowed me to achieve footsteps which matched the visual and the sound.
+- I also added sound attenuation to zombie breathing so the player starts hearing these disturbing noises when the enemy is nearby.
+
+Background sound to make the environment feel alive:
+- Horror music
+- Dungeon ambience
+
+Sounds:
+- Footsteps - help the player avoid the enemy but also build tension as you know he is near
+- Zombie breathing/noises - unsettling almost choking sounds which convey your enemy is a monster and not something human
+- Human/player breathing: Faint breathing, people often breathe heavier when experiencing anxiety or fear
+- Zombie scream - lets the player know the enemy is directly behind them and attacking
+
+#### Menus 
+Now that my main game loop was done I needed to create some menus so the player could navigate the game and there was on obvious win/lose. Although I have done a widget for my health bar early on in my project, I still wasn't the most familiar with UI in Unreal and its capabilities. To learn more about it I watched a video by Unreal University which showed how to create a main menu (How To Create A Main Menu - Unreal Engine 5 Tutorial, 2022). This video helped me learn how to use buttons which turned out to be fairly simple with the 'on clicked' events.
+
 
 
 
@@ -285,6 +312,9 @@ Unreal Engine 5 AI Patrol and Chase Tutorial (2023) At: https://www.youtube.com/
 AI Attack Tutorial - Unreal Engine 5.2 (2023) At: https://www.youtube.com/watch?v=N7CqOJNeAyU (Accessed  05/12/2024).
 
 Door And Key System | How To Open A Locked Door With A Key In Unreal Engine 5 (Tutorial) (2023) At: https://www.youtube.com/watch?v=Bcle9sSS4Oo (Accessed  05/12/2024).
+
+How To Create A Main Menu - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=kumZj_mov58 (Accessed  05/12/2024).
+
 
 
 
