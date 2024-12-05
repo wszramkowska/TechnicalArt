@@ -145,8 +145,26 @@ I knew I wanted my game to have enemies so I tackled enemy AI next. I found a go
 
 *Figure 5. Blueprints for enemy chase*
 
+- For my enemy to deal damage, I used a sphere collision component.
+- I attached the sphere to the hand of my zombie as that is what it will be using to hit the player.
+- If the player is within the range of this sphere, they will take damage.
+
+<iframe src="https://blueprintue.com/render/45jkgj6e/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 6. Blueprints for enemy deal damage*
+
+ 
 #### Enemy Animations
-To animate my enemy I used animations from Mixamo. I used a combination of animation blueprints, blend spaces and animation montages. So far in my project I had a good understanding of what was going on but I really struggled with animations. To help I went over my Animation System task journal.
+To animate my enemy I used animations from Mixamo. I used a combination of animation blueprints, blend spaces and animation montages. So far in my project I had a good understanding of what was going on but I really struggled with animations. To help I went over my Animation System task journal so I could figure out idle, walk and run animations. I also found a youtube video by Lisowi (AI Attack Tutorial - Unreal Engine 5.2, 2023) which showed me how to play my attack animations once the enemy is in attack range of the player.
+
+
+- I created an attack animation montage for my enemy, in case I wanted a variety of animations for the attack.
+- I added a montage notify in my zombie attack montage. This is timed to be where the enemies hand begins to come down, as that is where the player appears to be taking damage.
+- In my enemy blueprints I played the animation montage when the player was within attack range. 
+
+<iframe src="https://blueprintue.com/render/muk6va19/" scrolling="no" allowfullscreen></iframe>
+
+*Figure . Blueprints for enemy attack animation*
 
 
 
@@ -213,7 +231,14 @@ Here you can put links required for delivery of the task, ensure they are proper
 
 ## Bibliography
 
+Unreal Engine 5 Health and Damage System Tutorial [2023] (2023) At: https://www.youtube.com/watch?v=vO1i9Wcx4Xc (Accessed  03/11/2024).
+
 Unreal Engine 5 AI Patrol and Chase Tutorial (2023) At: https://www.youtube.com/watch?v=lbqZS-cgcQs (Accessed  03/11/2024).
+
+AI Attack Tutorial - Unreal Engine 5.2 (2023) At: https://www.youtube.com/watch?v=N7CqOJNeAyU (Accessed  05/12/2024).
+
+
+
 
 
 
