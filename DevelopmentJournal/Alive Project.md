@@ -18,6 +18,8 @@ The theme for this project is 'Alive' so I came up with a couple of initial idea
 
 I wanted to look at some video games to get inspiration for my game, specifically some stealth or chase scenes in horror games. A couple games that came to mind were Outlast and Resident Evil Village which have many tense chase/stealth scenes. 
 
+Outlast 
+
 
 
 ```Markdown
