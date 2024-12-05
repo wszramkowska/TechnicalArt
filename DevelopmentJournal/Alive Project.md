@@ -234,8 +234,59 @@ Sounds:
 - Zombie scream - lets the player know the enemy is directly behind them and attacking
 
 #### Menus 
-Now that my main game loop was done I needed to create some menus so the player could navigate the game and there was on obvious win/lose. Although I have done a widget for my health bar early on in my project, I still wasn't the most familiar with UI in Unreal and its capabilities. To learn more about it I watched a video by Unreal University which showed how to create a main menu (How To Create A Main Menu - Unreal Engine 5 Tutorial, 2022). This video helped me learn how to use buttons which turned out to be fairly simple with the 'on clicked' events.
+Now that my main game loop was done I needed to create some menus so the player could navigate the game and there was on obvious win/lose. Although I have done a widget for my health bar early on in my project, I still wasn't the most familiar with UI in Unreal and its capabilities. To learn more about it I watched a video by Unreal University which showed how to create a main menu (How To Create A Main Menu - Unreal Engine 5 Tutorial, 2022). This video helped me learn how to use buttons which turned out to be fairly simple with the 'on clicked' events. I focused on functionality rather than visuals as I wanted feedback on my main gameplay loop.
 
+Main menu 
+- Used a screenshot of my game as a background image
+- Start and quit buttons 
+- Title of my game 
+- Tried to pick a horror font but I did not spend too much time on this as it is not the focus for my project or developing my skills.
+
+<iframe src="https://blueprintue.com/render/2iq9qb9i/" scrolling="no" allowfullscreen></iframe>
+
+*Figure . setting input mode blueprints*
+
+<iframe src="https://blueprintue.com/render/xtx_purr/" scrolling="no" allowfullscreen></iframe>
+
+*Figure . blueprints for start and quit button*
+
+Game win
+- Button to main menu restart or quit
+- Simple Escaped message 
+
+<iframe src="https://blueprintue.com/render/in6q22_q/" scrolling="no" allowfullscreen></iframe>
+
+*Figure . blueprints for game win*
+
+Game Loss
+- Button to main menu, restart or quit
+- Simple game over message
+
+<iframe src="https://blueprintue.com/render/4285lcww/" scrolling="no" allowfullscreen></iframe>
+
+*Figure blueprints for game over*
+
+#### Feedback
+I asked family, friends and colleagues to test out my game and give me their feedback. 
+
+Key points from feedback:
+- Game is scary, when the enemy is near there is a good level of tension
+- Enemy ai could be more advanced e.g. the enemy can hear the player
+- Lighting looks good and effective for the genre
+- Once you find the key and escape, there is not much incentive to play again as you know where the key is so the game feels easier
+- Map is good, not too big but still able to get away from the enemy
+- Menus could look more interesting
+- There are no instructions for what to do or how to play 
+
+At this point I had limited time left to polish my project so I picked a couple points that I thought were very important and would greatly improve my game, but were still doable within the remaining time frame.
+
+"No incentive to replay"
+I wanted my game to be enjoyable for multiple runs and not just a one shot as that might mean the player doesn't even see the entire environment or potentially might not even meet the enemy if very lucky. To solve this issue I decided I would spawn my key in a random location from a set of predetermined locations. This means finding the key is not enough, you actually have to escape as well because on your next run it might be in a different location. It also encourages exploration.
+
+"No instructions"
+I think players can get easily frustrated when the objective of the game is not clear. I do not want players to get discouraged and drop my game so I decided to add a simple quest style bar in the top right which would direct the player. In addition I would add a message to the door saying something like "Press E to open" to make the controls of the game more obvious.
+
+#### Randomly Spawning Key
 
 
 
