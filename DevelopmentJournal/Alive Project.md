@@ -354,7 +354,9 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 <iframe frameborder="0" src="https://itch.io/embed/2374819" width="552" height="167"><a href="https://bitboyb.itch.io/nephilim-resurrection">Nephilim Resurrection (BETA) by bitboyb</a></iframe>
 
-*Figure 4. An example of a itch.io widget*
+<iframe frameborder="0" src="https://itch.io/embed/3156461" width="552" height="167"><a href="https://squlddy.itch.io/alive-below">Alive Below by squiddy</a></iframe>
+
+
 
 ## Critical Reflection
 
