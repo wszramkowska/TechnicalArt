@@ -440,14 +440,12 @@ Dungeon ambience, cold dark and eerie droning tone with howling wind outside and
 
 Horror Background Atmosphere #11 | Royalty-free Music (s.d.) At: https://pixabay.com/music/mystery-horror-background-atmosphere-11-240870/ (Accessed  05/12/2024).
 
+blackcraft - Search - dafont.com (s.d.) At: https://www.dafont.com/search.php?q=blackcraft&text=Alive+Below (Accessed  05/12/2024).
+
+Mixamo:
+Zombie character mesh and animations
 
 Used to assist in finding research material:
 Chat GPT
 
-
-
-The following assets were created or modified with the use of GPT 4o:
-- Test.cs
-- AnotherScript.cs
-- Development Journal.html
 
