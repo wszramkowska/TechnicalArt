@@ -13,22 +13,50 @@ The theme for this project is 'Alive' so I came up with a couple of initial idea
 
 ### What sources or references have you identified as relevant to this task?
 
-- What type of sources did you identity and want to explore? How would you justify it in reference to the brief set? Think about the focus of the brief.
-- What type of sources do you want to avoid? How could these kinds of sources be detrimental to the user experience, immersion or implementation?
+
 
 I wanted to look at some video games to get inspiration for my game, specifically some stealth or chase scenes in horror games. A couple games that came to mind were Outlast and Resident Evil Village which have many tense chase/stealth scenes. 
+I will of course also be looking at Unreal documentation throughout my project, when I feel stuck with blueprints or anything else, as documentation is a good, official and up to date source.
+For my core mechanics I will try to find video tutorials to help me.
 
-Outlast 
+#### Sources
+
+#### Outlast
+
+Outlast is a first-person survival horror game developed and published by Red Barrels. One of the scariest parts of the game for me personally was the sewer section where you are trapped with an enemy. The enemy is Chris Walker, a huge variant who pursues the main character relentlessly. I have narrowed down the 3 things that make this segment of the game so terrifying, and I hope I can implement some of this in my own game.
+
+[Outlast Full Chris Walker Sewer Scene](https://www.youtube.com/watch?v=xkJDQPPZA7c&ab_channel=Mitsuownes)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xkJDQPPZA7c?si=YwNpXNClvKvzmNCd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+(OUTLAST (Horror) Full Chris Walker Sewer Chase SCENE | PS5 Gameplay, 2022)
 
 
 
-```Markdown
-# Example
+##### Audio
+- You hear the rattle of chains before you even see Chris Walker coming, immediately making the player tense in anticipation of getting caught.
+- Music ramps up when getting chased, which gives a feeling of something being constantly behind you, however being too afraid to look back and slow yourself down.
 
-As I have done research regarding the audio identity and developing audio assets for this project in previous formative assignments. I wanted to look into specific Unreal and Wwise systems that will help create a more immersive experience. I wanted to focus on official documentation to improve my ability to learn new techniques without explicit instructions.
+##### Trapped
+- The player falls into this sewer and is stuck down there with Chris Walker. Since the area is not massive you feel like he is constantly on your tail.
+- The sewer can be difficult to navigate which adds further feeling of entrapment as you struggle to find the exit.
 
-I also wanted a creative source to help develop the parachute audio assets and learn how it should function within the game’s narrative.
-```
+##### Lighting 
+- It is very dark in this section, especially when you drop down to the lower level of the sewer. This makes it hard to spot Chris Walker.
+- Additionally humans have an innate fear of the dark, which is amplified by the knowledge of a dangerous enemy being there with us.
+- The player uses a camera which has night vision, but the battery can drain quickly so there is the additional fear of losing what vision you do have.
+
+##### No weapons
+- A key feature in the Outlast series is a lack of weapons. This is terrifying when facing enemies out to kill you.
+- Player has no defense and can therefore more easily empathise with the fear of the game protagonist. 
+
+<br>
+
+Overall I think I can learn a lot from this section of the game in creating a tense atmosphere which will elevate my project as I am aiming for a horror feel. Through both my research and my own gameplay I think many players agree this is a successfull example of horror done right.
+
+#### Unreal Documentation
+
+
+
 
 #### Sources
 
@@ -62,6 +90,9 @@ I found their implementation and choice great for the context of their narrative
 
 - What was the process of completing the task at hand? Did you do any initial planning?
 - Did you receive any feedback from users, peers or lecturers? How did you react to it?
+
+#### Planning 
+Due to my lack of experience with Unreal I did not want to set myself many aspirational goals which I then might not be able to complete. Instead I kept my mechanics simple and aimed for polish.
 
 <br>
 
