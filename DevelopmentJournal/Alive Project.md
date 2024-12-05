@@ -133,6 +133,9 @@ I knew I wanted my game to have enemies so I tackled enemy AI next. I found a go
 
 *Figure 6. Blueprints for enemy deal damage*
 
+[AI Test](https://www.youtube.com/watch?v=_tasIn8A2RQ&ab_channel=WSzramkowska)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_tasIn8A2RQ?si=jSHXRMn-J7314x3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <br>
  
 #### Enemy Animations
@@ -153,6 +156,11 @@ To animate my enemy I used animations from Mixamo. I used a combination of anima
 <iframe src="https://blueprintue.com/render/muk6va19/" scrolling="no" allowfullscreen></iframe>
 
 *Figure 8. Blueprints for enemy attack animation*
+
+[Enemy animation](https://www.youtube.com/watch?v=Di2K0OgP76Q&ab_channel=WSzramkowska)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Di2K0OgP76Q?si=MK6J8ufW9gO_DBI5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <br>
 
@@ -193,13 +201,21 @@ Since I had the idea to add a key into the game, I decided to work on it right a
 
 *Figure 11 Blueprints for destroying the key*
 
+[Key and door test](https://www.youtube.com/watch?v=WYU4weehMSc&ab_channel=WSzramkowska)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WYU4weehMSc?si=BMbtg7huz3RYLgm7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 #### Lighting 
-For lighting I knew I wanted my level to be fairly dark in order to create a scary atmosphere, hiding my enemy in the shadows. As I have never done this before I searched for a youtube video which could show me some of the possibilities with lighting in Unreal. I found one by Matt Aspland which specifically looks at interiors 
+For lighting I knew I wanted my level to be fairly dark in order to create a scary atmosphere, hiding my enemy in the shadows. As I have never done this before I searched for a youtube video which could show me some of the possibilities with lighting in Unreal. I found one by Matt Aspland which specifically looks at interiors (How To Light Interiors In Unreal Engine 4 & 5 (Tutorial), 2022).
 
 - I used torches to light up the corridors, using a fire particle asset I created in one of my earlier tasks. 
 - I used rect lights in the rooms as the player would have to search for the key in these so I thought it would be fair to make them brighter.
 - I used point lights on some of the torches to give a brighter orange glow in the area, replicating the sort of lighting you get from fire.
+
+[Lighting Test](https://www.youtube.com/watch?v=qyXZ1G6vcNA&ab_channel=WSzramkowska)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qyXZ1G6vcNA?si=f1LQDMbGgLZZHKGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Visual Improvements
 
@@ -265,6 +281,10 @@ Game Loss
 <iframe src="https://blueprintue.com/render/4285lcww/" scrolling="no" allowfullscreen></iframe>
 
 *Figure blueprints for game over*
+
+[Menus Test](https://www.youtube.com/watch?v=yQ6JdHc166k&ab_channel=WSzramkowska)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yQ6JdHc166k?si=YFVE2nFVEi45mkz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Feedback
 I asked family, friends and colleagues to test out my game and give me their feedback. 
@@ -405,6 +425,10 @@ AI Attack Tutorial - Unreal Engine 5.2 (2023) At: https://www.youtube.com/watch?
 Door And Key System | How To Open A Locked Door With A Key In Unreal Engine 5 (Tutorial) (2023) At: https://www.youtube.com/watch?v=Bcle9sSS4Oo (Accessed  05/12/2024).
 
 How To Create A Main Menu - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=kumZj_mov58 (Accessed  05/12/2024).
+
+How To Light Interiors In Unreal Engine 4 & 5 (Tutorial) (2022) At: https://www.youtube.com/watch?v=PKjnYulklNA (Accessed  05/12/2024).
+
+
 
 
 
