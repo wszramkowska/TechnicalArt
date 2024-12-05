@@ -172,7 +172,7 @@ To animate my enemy I used animations from Mixamo. I used a combination of anima
 
 <iframe src="https://blueprintue.com/render/muk6va19/" scrolling="no" allowfullscreen></iframe>
 
-*Figure . Blueprints for enemy attack animation*
+*Figure 8. Blueprints for enemy attack animation*
 
 <br>
 
@@ -191,7 +191,30 @@ I looked through the asset packs on Fab and found a medieval dungeon asset pack 
 Since I had the idea to add a key into the game, I decided to work on it right away. I found a video tutorial by Matt Aspland (Door And Key System | How To Open A Locked Door With A Key In Unreal Engine 5 (Tutorial), 2023) on making a door and key system. This taught me how to create an interact input, how to animate my door using a timeline, and how to specify which key unlocks which door.
 
 - Made a blueprint interface for 'interact' and 'door'
-- 
+- Set 'E' as my interaction button and added the interact input logic to my third person character blueprint. I used the enhanced input action system.
+- Made a blueprint for key and door. Gave them both collision boxes.
+- Animated the door using a timeline
+
+<iframe src="https://blueprintue.com/render/qxpkc30l/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 9. Blueprints for the Interact Input*
+
+- Door opens if 'HasKey?' is true
+- Left and right door are animated using set relative rotation and door timeline
+
+<iframe src="https://blueprintue.com/render/msw381ik/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 10 Blueprints for door opening*
+
+- When player picks up key, the key object is destroyed
+
+<iframe src="https://blueprintue.com/render/a1s2vpwl/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 11* Blueprints for destroying the key*
+
+
+
+
 
 
 
