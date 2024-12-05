@@ -352,31 +352,47 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 
 
-- [Alive Below Gameplay Trailer](https://www.youtube.com/watch?v=kEkBX7NXY7w&t=89s&ab_channel=WSzramkowska)
-- [Technical Art Github Repository](https://github.com/wszramkowska/TechnicalArt)
-- [Alive Below Build](https://squlddy.itch.io/alive-below)
+[Alive Below Gameplay Trailer](https://www.youtube.com/watch?v=kEkBX7NXY7w&t=89s&ab_channel=WSzramkowska)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=C4v0qHaYuEISAC01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kEkBX7NXY7w?si=5UvN41bhssKIN486" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-*Figure 3. An example of an embedded video using a HTML code snippet.*
 
-<iframe frameborder="0" src="https://itch.io/embed/2374819" width="552" height="167"><a href="https://bitboyb.itch.io/nephilim-resurrection">Nephilim Resurrection (BETA) by bitboyb</a></iframe>
+
+
+[Alive Below Build](https://squlddy.itch.io/alive-below)
+
 
 <iframe frameborder="0" src="https://itch.io/embed/3156461" width="552" height="167"><a href="https://squlddy.itch.io/alive-below">Alive Below by squiddy</a></iframe>
 
+
+[Technical Art Github Repository](https://github.com/wszramkowska/TechnicalArt)
 
 
 ## Critical Reflection
 
 ### What did or did not work well and why?
 
-- What did not work well? What parts of the assignment that you felt did not fit the brief or ended up being lacklustre.
-- What did you think went very well? Were there any specific aspects you thought were very good?
+#### Improvements
+- My enemy ai is very simple, I think a more complex ai could benefit the gameplay. For example adding hearing or adjusting the sight radius to have a more realistic feel. When walking behind the enemy, despite being very close, it won't really notice you unless it turns around.
+- I had trouble with the asset pack and my fire particle which could shine through walls in certain areas.
+- Time management is a key element for this type of project. Had I been a bit more organised I could have achieved even more and really pushed for complete polish. Since I had no prior knowledge I spent a lot of time reading documentation, watching tutorials and fixing my code. Although this is a normal part of development, as my skills improve I can put more time into my game.
+- I used an unstructured method for my blueprints. I think this was okay for my project as it is quite small scale, but I would like to use other methods such as behaviour trees in the future so I can more easily manage bigger projects.
+
+#### What went well
+- I actually like the gameplay loop I created even though it is quite simple. Earlier on I had some doubts it would be too boring but after receiving feedback and making keys spawn in random location I think it really elevated the gameplay and gave my game replayability.
+- I think I captured a good horror atmosphere through sounds, lighting and level design. When asking for player feedback, many said they felt the tension whilst playing the game.
+- I am proud of my research and learning. I was able to implement tutorials and documentation into my own project. It didn't always work but I managed to use problem solving to adapt it and fix it.
+- My mechanics are suitable for my genre of game. They work well together, avoiding the enemy, finding the key, escaping. 
+- 
 
 ### What would you do differently next time?
 
-- Are there any new approaches, methodologies or different software that you wish to incorporate if you have another chance?
-- Is there another aspect you believe should have been the focus?
+- Next time I would like to use a method other than unstructured, such as behaviour trees. I hope this will help me with managing my game. 
+- I would like to organise my folders better. I made a start on this but I think there is a lot of room for improvement. 
+- I think it would be a great addition to make the enemy able to hear the player. It could create more varied gameplay. Along with a crouch this could be a fun mechanic to make the game more stealth like.
+- Spend a bit more time on menus, maybe add a settings option to give the player more control over the game. My PC is not the best, so it would lag quite a bit on higher settings which I think reflects in the trailer. I would like to add options to lower the graphics which would fix situations like that.
+- Settings could also add accessibility with things like subtitles, even if it is just for the enemy's footsteps in the case of my game.
+- I would love to add a cinematic sequence to create a jumpscare when the enemy kills the player.
 
 ## Bibliography
 
