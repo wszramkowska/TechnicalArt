@@ -64,25 +64,6 @@ Overall I think I can learn a lot from this section of the game in creating a te
 - List the aspects analysed in reference to the current task.
 - An ending paragraph stating what you enjoyed or disliked, what you agreed with or not agree with.
 
-```Markdown
-# Example Documentation
-
-I wanted to create an emitter which takes advantage of spread and focus, which was a technique I learned from a previous assignment where the spatialisation of an object changes depending on distance. I also wanted to work specifically with a `Spline Component` to encapsulate the entire ship with an “Ocean Emitter”. This led me to read the Unreal Blueprints API References and Wwise 3D Positioning documentation (Unreal Engine Blueprint API Reference | Unreal Engine 5.4 Documentation | Epic Developer Community, s.d., AudioKinetic Inc, s.d.).
-
-I found a Blueprint node called “Find Location Closest to World Location" which returns a `Vector3` on the spline position closest to another `Vector3`, I believe this can help move the emitter towards the player(Finding time of given results from (Find Location Closest to World Location) from Splines - Programming & Scripting / Blueprint, 2023).
-
-I found the Unreal documentation clear and easy to navigate, however it was much harder to find specific nodes unless you are familiar with the naming conventions used by Unreal, such as “World Location” and the API documentation is separated from the property references. The Wwise documentation on the other hand is much easier to navigate as they have core topics such as “Using Sounds and Motion to Enhance Gameplay” and examples of how they can be applied, which the unreal documentation lacked. 
-
-# Example Game Source
-
-Just Cause 3 is an action-adventure game developed by Avalanche Studios, it features a mechanic where the player can navigate the open world with the use of a parachute and a wingsuit(Just Cause 3, 2015).
-
-The wind becomes more prominent in the mix and its volume and speed is based on the player's velocity when using the wingsuit or parachute. It is not too overwhelming during action sequences to ensure audio responses can be clearly heard.
-
-I found their implementation and choice great for the context of their narrative and game mechanics. However, for the sequences featured in the assignment, it is more “cinematic” allowing for a different approach for the mix and can be “exaggerated” to drive its narrative function.
-
-
-```
 
 ## Implementation
 
@@ -184,6 +165,7 @@ I looked through the asset packs on Fab and found a medieval dungeon asset pack 
 - The rooms gave me the idea to include a key the player would have to search for in order to unlock the exit. The key would force the player to move around the map more, which increases the likelihood of them encountering the enemy.
 - Slight variation in shape but the map is mostly just a rectangle, with more rectangles inside. This keeps it clean and fair. 
 - Since I decided to keep the map small I thought my game would work well with just the one enemy. This is when I had the idea to make the enemy a one shot kill on the player, which would add to the tension. This also meant I would no longer need the HP bar I made at the beginning of the project.
+- I did some scene dressing, adding in props to make the environment feel more alive and in general be less boring to look at. I tried to vary the rooms, but not have too many props so as not to distract too much from looking for the key.
 
 <br>
 
@@ -210,8 +192,22 @@ Since I had the idea to add a key into the game, I decided to work on it right a
 
 <iframe src="https://blueprintue.com/render/a1s2vpwl/" scrolling="no" allowfullscreen></iframe>
 
-*Figure 11* Blueprints for destroying the key*
+*Figure 11 Blueprints for destroying the key*
 
+
+#### Lighting 
+For lighting I knew I wanted my level to be fairly dark in order to create a scary atmosphere, hiding my enemy in the shadows. As I have never done this before I searched for a youtube video which could show me some of the possibilities with lighting in Unreal. I found one by Matt Aspland which specifically looks at interiors 
+
+- I used torches to light up the corridors, using a fire particle asset I created in one of my earlier tasks. 
+- I used rect lights in the rooms as the player would have to search for the key in these so I thought it would be fair to make them brighter.
+- I used point lights on some of the torches to give a brighter orange glow in the area, replicating the sort of lighting you get from fire.
+
+#### Visual Improvements
+
+- Changed my third person camera to first person by moving the camera attached to my character into the head. First person made the game much scarier as you could no longer see what was happening behind you or to the side of you.
+- Adding vignette for a horror feel.
+- Decreasing field of view, meaning the player sees less and the enemy is scarier.
+- Increased intensity of fog to add to the creepy atmosphere.
 
 
 
