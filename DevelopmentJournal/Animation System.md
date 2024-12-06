@@ -85,56 +85,38 @@ Animation Debug Output:
 ShowDebug Animation command provides detailed debug information in five sections.
 Toggle sections with ShowDebugToggleSubCategory for targeted debugging.
 
-##### Youtube Video Fire Simulation FX in Unreal Engine Niagara | in 12 minutes by Motion Dreams
+##### Youtube Video Unreal Engine 5 Tutorial - Animation Blueprint Part 2: Blend Spaces
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q8avHL7syC4?si=0RI2MJx4VxcJB63_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0Ab_MeAh6_k?si=mo3fT7my-kNvJ1FL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-After reading the Unreal documentation I wanted to get straight into creating my effect and I thought the easiest way to learn would be a tutorial. I watched this youtube video by Motion Dreams and then tried to create my own fire based on what I had learned. To make things simpler, the video provided chapters which included the different emitters within the system. The emitters I wanted to create for my fire were flames, smoke, embers and a glow which would cast onto the ground, so I tried to pay extra attention for those chapters in the video.
+I found a youtube video explaining how blend spaces work in Unreal. The video showed me how to blend my animations together which would be very useful as I had 3 animations; idle, walk and run. 
 
-One of the first things this video covers is how to actually create a Niagara system and select a template. Motion dreams edits a lot of modules, changing things like; spawn rate, life time, sprite size, drag, noise and velocity. 
+- Set up axis (vertical axis is speed)
+- Idle helps with acceleration
+- Plug blend space into output animation pose
+- Update animation and calculate from velocity
 
-One thing that stood out to me was unchecking or deleting gravity force which would stop my particles from dropping and give me a flame effect. 
-
-Another important setting for me was the Sprite renderer where I could add a material from the starter content which looked like fire. Using the Sub UVAnimation module I could animate that material. 
-
-The video also taught me how to use the 'color from curve' setting which gives you a colour ramp so you can add multiple colours and choose how they are blended.Top markers on the ramp control the colour, whilst the bottom markers control opacity. This will be valuable when trying to recreate the colour of flames, which blend yellows, oranges and reds.
-
-I found this video to be a great learning tool. It gave me a base to work from, where I could play around with the modules to create my own fire effect. All of the information was up to date and worked with my version of Unreal.
-
+I found this video particularly helpful to get my animation correct based on my speed. 
 
 ## Implementation
 
 ### What was the process of completing the task? What influenced your decision making?
 
-- For this task I created a fire particle effect using Niagara.
-- I created 3 emitters; flames, smoke and embers.
-- Gave the fire a glowing effect.
+- For this task I used animation from my Alive Below game project where I created a blend space for my zombie character.
+- Used the blend space in my enemy blueprint
 
+<iframe src="https://blueprintue.com/render/uk4uthg-/" scrolling="no" allowfullscreen></iframe>
 
-###### Flames
-- I used the fountain emitter template as a base for my flames.
-- Changed various settings within 'initirialize particle' module such as; lifetime, uniform sprite. 
-- Changed velocity module settings.
-- Turned off gravity to make the flame go up.
-- Added curl noise force module to give a flame flickering effect.
-- Changed material texture to fire_subuv.
-- Used colour from curve in the colour module, picked reds, oranges and yellows to blend. 
+*Animation blueprint event graph*
 
-###### Smoke
-- Used my flame emitter as a base.
-- Changed material texture to smoke_subuv.
-- Changed colour to just black.
-- Changed alpha to make the smoke more transparent.
-- Increased sprite size, velocity and lifetime to make the smoke bigger than the fire, and last longer.
-- I also changed the sim target to use the gpu for this simulation.
+- I created an attack animation montage for my enemy, in case I wanted a variety of animations for the attack.
+- I added a montage notify in my zombie attack montage. This is timed to be where the enemies hand begins to come down, as that is where the player appears to be taking damage.
+- In my enemy blueprints I played the animation montage when the player was within attack range. 
 
-###### Embers
-- Used the fountain template as a base.
-- Made the particles small using uniform sprite size.
-- I copy and pasted the colour module from my flame emitter to match the embers to the flames.
+<iframe src="https://blueprintue.com/render/muk6va19/" scrolling="no" allowfullscreen></iframe>
 
+*Blueprints for enemy attack animation*
 
-After creating my semi realistic fire particle I had a go at making a more simplistic stylised version. I was able to apply many of the skills I learned and mess around with parameters. Although not as detailed, I really like how it looks and can see it working well for a stylised game.
 
 <br>
 
@@ -142,53 +124,47 @@ After creating my semi realistic fire particle I had a go at making a more simpl
 
 ### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
 
-- To make my fire more realistic I added a glow that would come off it and cast to its surroundings (ground, walls etc.)
-- To do this I added a Light Renderer module.
+- I added footstep sounds to my animation blueprint using the play sound notify
+- This allowed me to precisely match the footstep sounds to the actual walking/running of the zombie
+- I disconnected the top and lower body
 
 <br>
 
 
 
-### Did you have any technical difficulties? If so, what were they and did you manage to overcome them?
-
-- I struggled to make my fire glow. To fix this I added a value and multiplied it with the texture sample, connecting the node to the emissive colour. This wasn't shown in the youtube video I watched (Fire Simulation FX in Unreal Engine Niagara | in 12 minutes, 2023) so I had to figure it out myself.
-
 ## Outcome
 
 
 
-[Fire Particle System](https://www.youtube.com/watch?v=TQfRk6fm998&ab_channel=WSzramkowska)
+[Enemy animation](https://www.youtube.com/watch?v=Di2K0OgP76Q&ab_channel=WSzramkowska)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Di2K0OgP76Q?si=MK6J8ufW9gO_DBI5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TQfRk6fm998?si=CakYgXliBS5EyVxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+### Did you have any technical difficulties? If so, what were they and did you manage to overcome them?
 
-*Figure 1. Fire Particle Effect*
-
-
+- It was very easy to avoid the player attack because the enemy would stand still whilst attacking. I did this to prevent an awkward sliding motion.
+- To fix this I seperate the torso from the legs so the enemy was still able to attack whilst running.
 
 ## Critical Reflection
 
 ### What did or did not work well and why?
 
-- I thought the task was very successful. I liked the visuals of my fire effects.
-- I layered multiple emitters to create a semi-realistic fire effect.
-- I used various modules and edited multiple parameters to achieve my fire effect.
-- I created two versions, a simplistic stylised fire and a semi-realistic fire. This helped better my understanding of the capabilities of the Niagara System.
-- There are still many modules I haven't used which would take time and practice to learn.
+- The animation works well, I like that it transitions based on the speed of the character as it makes it feel more natural.
+- The animations are accurate to the current state of the enemy (idle, chasing, patrolling, attacking).
+- I think I could have more variety in animations to make it more interesting.
 
 ### What would you do differently next time?
 
-- I  could try to create an effect without using a template to further my knowledge, although I don't think it is a necessary skill for me as a developer.
-- I could also add more emitters for a more complex fire system. For example heat distortion.
-- I would also like to try creating effects other than fire.
+- I would like to try more complex animations where my enemy could cycle through different attacks
+- I think it would be interesdting to randomise these animations
 
 ## Bibliography
 
-Niagara Overview | Unreal Engine 4.27 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/overview-of-niagara-effects-for-unreal-engine (Accessed  27/10/2024).
+Unreal Engine 5 Tutorial -  Animation Blueprint Part 2: Blend Spaces (2023) At: https://www.youtube.com/watch?v=0Ab_MeAh6_k (Accessed  06/12/2024).
 
-Niagara Editor UI Reference | Unreal Engine 4.27 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/editor-ui-reference-for-niagara-effects-in-unreal-engine (Accessed  27/10/2024).
+Animation System Overview | Unreal Engine 4.27 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/skeletal-mesh-animation-system-in-unreal-engine (Accessed  15/11/2024).
 
-Fire Simulation FX in Unreal Engine Niagara | in 12 minutes (2023) At: https://www.youtube.com/watch?v=q8avHL7syC4 (Accessed  27/10/2024).
+
 
 ## Declared Assets
 
