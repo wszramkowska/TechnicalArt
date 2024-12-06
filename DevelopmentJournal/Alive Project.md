@@ -403,7 +403,6 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 - I think I captured a good horror atmosphere through sounds, lighting and level design. When asking for player feedback, many said they felt the tension whilst playing the game.
 - I am proud of my research and learning. I was able to implement tutorials and documentation into my own project. It didn't always work but I managed to use problem solving to adapt it and fix it.
 - My mechanics are suitable for my genre of game. They work well together, avoiding the enemy, finding the key, escaping. 
-- 
 
 ### What would you do differently next time?
 
