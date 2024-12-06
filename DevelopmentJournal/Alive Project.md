@@ -411,6 +411,19 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 ## Bibliography
 
+Basic Navigation in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/basic-navigation-in-unreal-engine (Accessed  03/12/2024).
+
+Creating Widgets in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/creating-widgets-in-unreal-engine (Accessed  06/12/2024).
+
+MetaSounds: The Next Generation Sound Sources in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/metasounds-the-next-generation-sound-sources-in-unreal-engine (Accessed  06/12/2024).
+
+
+MetaSounds Quick Start | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/metasounds-quick-start (Accessed  06/12/2024).
+
+Animation Blueprints in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/animation-blueprints-in-unreal-engine (Accessed  06/12/2024).
+
+
+
 Unreal Engine 5 Health and Damage System Tutorial [2023] (2023) At: https://www.youtube.com/watch?v=vO1i9Wcx4Xc (Accessed  03/11/2024).
 
 Unreal Engine 5 AI Patrol and Chase Tutorial (2023) At: https://www.youtube.com/watch?v=lbqZS-cgcQs (Accessed  03/11/2024).
@@ -422,6 +435,17 @@ Door And Key System | How To Open A Locked Door With A Key In Unreal Engine 5 (T
 How To Create A Main Menu - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=kumZj_mov58 (Accessed  05/12/2024).
 
 How To Light Interiors In Unreal Engine 4 & 5 (Tutorial) (2022) At: https://www.youtube.com/watch?v=PKjnYulklNA (Accessed  05/12/2024).
+
+OUTLAST (Horror) Full Chris Walker Sewer Chase SCENE | PS5 Gameplay (2022) At: https://www.youtube.com/watch?v=xkJDQPPZA7c (Accessed  05/12/2024).
+
+How To Randomize Actor Spawn Locations - Unreal Engine 5 (2024) At: https://www.youtube.com/watch?v=2O_EESpvYgc (Accessed  04/12/2024).
+
+How to Make Footsteps with Metasounds in Unreal Engine 5 (2023) At: https://www.youtube.com/watch?v=Zv8aRutdflQ (Accessed  03/12/2024).
+
+How to Make a Widget Notification in Unreal Engine 5 (2024) At: https://www.youtube.com/watch?v=pdD_Lyo2HeA (Accessed  03/12/2024).
+
+How To Make A 3D Interaction Prompt In Unreal Engine 5 (Tutorial) (2023) At: https://www.youtube.com/watch?v=kB1_qxNUi9Q (Accessed  03/12/2024).
+
 
 
 ## Declared Assets
