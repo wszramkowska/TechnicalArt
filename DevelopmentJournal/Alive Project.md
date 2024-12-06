@@ -198,13 +198,13 @@ Since I had the idea to add a key into the game, I decided to work on it right a
 
 <iframe src="https://blueprintue.com/render/msw381ik/" scrolling="no" allowfullscreen></iframe>
 
-*Figure 10 Blueprints for door opening*
+*Figure 10. Blueprints for door opening*
 
 - When player picks up key, the key object is destroyed
 
 <iframe src="https://blueprintue.com/render/a1s2vpwl/" scrolling="no" allowfullscreen></iframe>
 
-*Figure 11 Blueprints for destroying the key*
+*Figure 11. Blueprints for destroying the key*
 
 [Key and door test](https://www.youtube.com/watch?v=WYU4weehMSc&ab_channel=WSzramkowska)
 
@@ -237,7 +237,7 @@ Audio is a key feature in horror games and can really set the tone and mood of t
 
 <iframe src="https://blueprintue.com/render/kdmyjw2m/" scrolling="no" allowfullscreen></iframe>
 
-*Figure . Meta sound source for human breathing*
+*Figure 12. Meta sound source for human breathing*
 
 - I created sound attenuation for fire, to add a bit of liveliness to the environment.
 - I created sound attenuation for the zombie footsteps so the player can only hear them when they are close by.
@@ -265,11 +265,11 @@ Main menu
 
 <iframe src="https://blueprintue.com/render/2iq9qb9i/" scrolling="no" allowfullscreen></iframe>
 
-*Figure . setting input mode blueprints*
+*Figure 13. setting input mode blueprints*
 
 <iframe src="https://blueprintue.com/render/xtx_purr/" scrolling="no" allowfullscreen></iframe>
 
-*Figure . blueprints for start and quit button*
+*Figure 14. blueprints for start and quit button*
 
 Game win
 - Button to main menu restart or quit
@@ -277,7 +277,7 @@ Game win
 
 <iframe src="https://blueprintue.com/render/in6q22_q/" scrolling="no" allowfullscreen></iframe>
 
-*Figure . blueprints for game win*
+*Figure 15. blueprints for game win*
 
 Game Loss
 - Button to main menu, restart or quit
@@ -285,7 +285,7 @@ Game Loss
 
 <iframe src="https://blueprintue.com/render/4285lcww/" scrolling="no" allowfullscreen></iframe>
 
-*Figure blueprints for game over*
+*Figure 16. blueprints for game over*
 
 [Menus Test](https://www.youtube.com/watch?v=yQ6JdHc166k&ab_channel=WSzramkowska)
 
@@ -321,7 +321,7 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 <iframe src="https://blueprintue.com/render/gfmawe9q/" scrolling="no" allowfullscreen></iframe>
 
-*Figure . blueprints for spawning key in random locations*
+*Figure 17. blueprints for spawning key in random locations*
 
 #### 'Quest' bar
 - I created a widget with a small quest bar in the top right of the screen. I added this to viewport from the BP_Key blueprint.
@@ -330,7 +330,7 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 <iframe src="https://blueprintue.com/render/nc8-esjh/" scrolling="no" allowfullscreen></iframe>
 
-*Figure . blueprints for adding the quest bar to viewport and setting the text after picking up ley*
+*Figure 18. blueprints for adding the quest bar to viewport and setting the text after picking up ley*
 
 #### Press 'E' prompt on door
 - I made a widget and attached it to my door blueprint
@@ -338,7 +338,7 @@ I found a video by RubaDev on how to randomize actor spawn locations and adapted
 
 <iframe src="https://blueprintue.com/render/kk4k8d5g/" scrolling="no" allowfullscreen></iframe>
 
-*Figure . blueprints for interaction prompt*
+*Figure 19. blueprints for interaction prompt*
 
 <br>
 
