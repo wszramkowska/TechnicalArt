@@ -55,14 +55,19 @@ Overall I think I can learn a lot from this section of the game in creating a te
 
 #### Unreal Documentation
 
+Another source I will be regularly going to throughout my project is the Unreal Documentation as I believe it has some of the most accurate and up to date information.There are multiple that I will be using depending on the specific mechanics I am trying to implement, one such documentation is the AI Perception system (AI Perception in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.) which I used to help create my enemy AI.
+
+Key components of AI Perception:
+
+- AI Perception Component: A component that defines which senses to use, how to configure them, and how the AI should respond to detected stimuli.
+- Senses: Different types of sensory inputs, such as Sight, Hearing, Damage, and Touch, are configurable with various parameters like detection radius, range, and affiliation (e.g., enemies, neutrals, or friendlies).
+- Stimuli Sources: Actors in the game world that emit stimuli (e.g., sounds, visual signals) which are registered by the AI to trigger perception updates.
+- Events: Actions triggered by sensory updates, such as “On Perception Updated” and “On Target Perception Info Updated,” allowing AI logic to react to the perceived stimuli.
+- Debugging: The AI Perception Debugging tools help visualize and troubleshoot perception events in real time during gameplay.
+
+This was very helpful to teach me a bit about the possibilites of AI within my game. Particularly the the sight radius sensing which gives my enemy a 'visual radius' for detecting the player. I then incorporated this logic with my 'Chase' blueprints, so my enemy would detect the player and then move to them. I would also like to implement the hearing sense if I have enough time, so my enemy can also hear the player and chase them. Although this documentation provides a lot of information, a common thing I have noticed is that there tends to be an overwhelming amount of information which can be hard to navigate. The Unreal Documentation has a lot of generasl knowledge but I can only really get specific help for my project when I come to my task. For example if I am working on the enemy AI and I get stuck on how to make it notice the player, I can then look up the relevant information. 
 
 
-
-#### Sources
-
-- An opening paragraph about the source stating the author, developer or organisation, this paragraph should explain the source's influence, credentials, critical reception, awards, reputation or any issues with the source. For example, if the source is not reputable. If the source is a game, the issues that occurred during development or if had a poor launch.
-- List the aspects analysed in reference to the current task.
-- An ending paragraph stating what you enjoyed or disliked, what you agreed with or not agree with.
 
 
 ## Implementation
@@ -422,7 +427,7 @@ MetaSounds Quick Start | Unreal Engine 5.5 Documentation | Epic Developer Commun
 
 Animation Blueprints in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/animation-blueprints-in-unreal-engine (Accessed  06/12/2024).
 
-
+AI Perception in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/ai-perception-in-unreal-engine (Accessed  06/12/2024).
 
 Unreal Engine 5 Health and Damage System Tutorial [2023] (2023) At: https://www.youtube.com/watch?v=vO1i9Wcx4Xc (Accessed  03/11/2024).
 
@@ -469,7 +474,7 @@ blackcraft - Search - dafont.com (s.d.) At: https://www.dafont.com/search.php?q=
 Mixamo:
 Zombie character mesh and animations
 
-Used to assist in finding research material:
+Used to assist in finding and summarising research material:
 Chat GPT
 
 
